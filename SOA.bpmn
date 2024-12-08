@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:di_1="http://www.omg.org/spec/DD/20100524/DI" xmlns:model="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bonitaConnector="http://www.bonitasoft.org/studio/connector/definition/6.0" xmlns:java="http://jcp.org/en/jsr/detail?id=270" targetNamespace="http://bonitasoft.com/_qDzhkKwuEe-Pw-DuHJ1-6A" expressionLanguage="http://groovy.apache.org/" exporter="bpmn-js (https://demo.bpmn.io)" exporterVersion="18.1.1" xsi:schemaLocation="schemaLocation http://www.omg.org/spec/BPMN/20100524/MODEL schemas/BPMN20.xsd">
+  <model:collaboration id="_qDzhkKwuEe-Pw-DuHJ1-6A">
+    <model:participant id="_RriaMLNVEe-lF4M30rbgug" name="Clinique" processRef="_qDzhkawuEe-Pw-DuHJ1-6A" />
+    <model:participant id="_qDzhq6wuEe-Pw-DuHJ1-6A" name="Employee actor">
+      <model:documentation>This is an example of actor that is mapped to any ACME users</model:documentation>
+    </model:participant>
+  </model:collaboration>
+  <model:process id="_qDzhkawuEe-Pw-DuHJ1-6A" name="Clinique">
+    <model:ioSpecification id="_Rr3KULNVEe-lF4M30rbgug">
+      <model:inputSet id="_Rr4YcLNVEe-lF4M30rbgug" />
+      <model:outputSet id="_Rr_tMLNVEe-lF4M30rbgug" />
+    </model:ioSpecification>
+    <model:laneSet id="clinique_laneSet">
+      <model:lane id="_GxAgUKxEEe-Pw-DuHJ1-6A" name="Patient">
+        <model:flowNodeRef>_-mZZ0K0IEe-Pw-DuHJ1-6A</model:flowNodeRef>
+        <model:flowNodeRef>_Cnge0K0JEe-Pw-DuHJ1-6A</model:flowNodeRef>
+        <model:flowNodeRef>_zgW5gK0IEe-Pw-DuHJ1-6A</model:flowNodeRef>
+        <model:flowNodeRef>_h-oSsK0JEe-Pw-DuHJ1-6A</model:flowNodeRef>
+        <model:flowNodeRef>_9htXwK0KEe-Pw-DuHJ1-6A</model:flowNodeRef>
+        <model:flowNodeRef>_beZ8YK0IEe-Pw-DuHJ1-6A</model:flowNodeRef>
+        <model:flowNodeRef>_ZhuNQK0IEe-Pw-DuHJ1-6A</model:flowNodeRef>
+        <model:flowNodeRef>_D1trcK0WEe-Pw-DuHJ1-6A</model:flowNodeRef>
+        <model:flowNodeRef>_4qMOMK0VEe-Pw-DuHJ1-6A</model:flowNodeRef>
+        <model:flowNodeRef>_sJNTgK0NEe-Pw-DuHJ1-6A</model:flowNodeRef>
+      </model:lane>
+      <model:lane id="_GOnk8KxEEe-Pw-DuHJ1-6A" name="&#10;Médecin">
+        <model:flowNodeRef>_et-pAK0DEe-Pw-DuHJ1-6A</model:flowNodeRef>
+        <model:flowNodeRef>_Q6PMUK0DEe-Pw-DuHJ1-6A</model:flowNodeRef>
+        <model:flowNodeRef>_RgHgkK0DEe-Pw-DuHJ1-6A</model:flowNodeRef>
+        <model:flowNodeRef>_pV4b0K0DEe-Pw-DuHJ1-6A</model:flowNodeRef>
+        <model:flowNodeRef>_mvqngK0DEe-Pw-DuHJ1-6A</model:flowNodeRef>
+        <model:flowNodeRef>_0ICBsK0BEe-Pw-DuHJ1-6A</model:flowNodeRef>
+        <model:flowNodeRef>_s4M98K0BEe-Pw-DuHJ1-6A</model:flowNodeRef>
+        <model:flowNodeRef>_qDXnYK0YEe-Pw-DuHJ1-6A</model:flowNodeRef>
+        <model:flowNodeRef>_QgPycK0YEe-Pw-DuHJ1-6A</model:flowNodeRef>
+        <model:flowNodeRef>_V8RoMK0WEe-Pw-DuHJ1-6A</model:flowNodeRef>
+        <model:flowNodeRef>_4PyCwK0YEe-Pw-DuHJ1-6A</model:flowNodeRef>
+      </model:lane>
+      <model:lane id="_qDzhkqwuEe-Pw-DuHJ1-6A" name="Administrateur">
+        <model:flowNodeRef>_qDzhk6wuEe-Pw-DuHJ1-6A</model:flowNodeRef>
+        <model:flowNodeRef>_csdvIK0BEe-Pw-DuHJ1-6A</model:flowNodeRef>
+        <model:flowNodeRef>_QUDEIK0FEe-Pw-DuHJ1-6A</model:flowNodeRef>
+        <model:flowNodeRef>_cnSXYK0FEe-Pw-DuHJ1-6A</model:flowNodeRef>
+        <model:flowNodeRef>_dwWOAK0BEe-Pw-DuHJ1-6A</model:flowNodeRef>
+        <model:flowNodeRef>_RJsPgK0BEe-Pw-DuHJ1-6A</model:flowNodeRef>
+        <model:flowNodeRef>_Hmv5oK0BEe-Pw-DuHJ1-6A</model:flowNodeRef>
+        <model:flowNodeRef>_p41F8K0FEe-Pw-DuHJ1-6A</model:flowNodeRef>
+        <model:flowNodeRef>_EH_W8K0FEe-Pw-DuHJ1-6A</model:flowNodeRef>
+        <model:flowNodeRef>_FzGkAKz8Ee-Pw-DuHJ1-6A</model:flowNodeRef>
+        <model:flowNodeRef>_DdflQK0BEe-Pw-DuHJ1-6A</model:flowNodeRef>
+        <model:flowNodeRef>_U1GNcK0FEe-Pw-DuHJ1-6A</model:flowNodeRef>
+        <model:flowNodeRef>_l8YegK0FEe-Pw-DuHJ1-6A</model:flowNodeRef>
+        <model:flowNodeRef>_CeBvgK0FEe-Pw-DuHJ1-6A</model:flowNodeRef>
+      </model:lane>
+    </model:laneSet>
+    <model:startEvent id="_qDzhk6wuEe-Pw-DuHJ1-6A" name="Demande de rendez-vous" />
+    <model:endEvent id="_csdvIK0BEe-Pw-DuHJ1-6A" name="End">
+      <model:terminateEventDefinition id="_RteT4LNVEe-lF4M30rbgug" />
+    </model:endEvent>
+    <model:exclusiveGateway id="_QUDEIK0FEe-Pw-DuHJ1-6A" name="." />
+    <model:userTask id="_cnSXYK0FEe-Pw-DuHJ1-6A" name="Créer un nouveau profil" />
+    <model:endEvent id="_dwWOAK0BEe-Pw-DuHJ1-6A" name="End">
+      <model:terminateEventDefinition id="_RtfiAbNVEe-lF4M30rbgug" />
+    </model:endEvent>
+    <model:userTask id="_RJsPgK0BEe-Pw-DuHJ1-6A" name="Créer un dossier médical" />
+    <model:userTask id="_Hmv5oK0BEe-Pw-DuHJ1-6A" name="Afficher/mettre à jour le dossier" />
+    <model:endEvent id="_p41F8K0FEe-Pw-DuHJ1-6A" name="End">
+      <model:terminateEventDefinition id="_RtlBkrNVEe-lF4M30rbgug" />
+    </model:endEvent>
+    <model:serviceTask id="_EH_W8K0FEe-Pw-DuHJ1-6A" name="Vérification profil (médecin)" />
+    <model:serviceTask id="_FzGkAKz8Ee-Pw-DuHJ1-6A" name="Vérifier le dossier médical" />
+    <model:exclusiveGateway id="_DdflQK0BEe-Pw-DuHJ1-6A" name="Existance du dossier" />
+    <model:userTask id="_U1GNcK0FEe-Pw-DuHJ1-6A" name="Modifier ou supprimer le profil" />
+    <model:endEvent id="_l8YegK0FEe-Pw-DuHJ1-6A" name="End">
+      <model:terminateEventDefinition id="_RtlBkLNVEe-lF4M30rbgug" />
+    </model:endEvent>
+    <model:startEvent id="_CeBvgK0FEe-Pw-DuHJ1-6A" name="Gestion des médecins" />
+    <model:exclusiveGateway id="_et-pAK0DEe-Pw-DuHJ1-6A" name="existance de prescription" />
+    <model:userTask id="_Q6PMUK0DEe-Pw-DuHJ1-6A" name="Afficher prescriptions" />
+    <model:userTask id="_RgHgkK0DEe-Pw-DuHJ1-6A" name="Créer une nouvelle" />
+    <model:endEvent id="_pV4b0K0DEe-Pw-DuHJ1-6A" name="End">
+      <model:terminateEventDefinition id="_RtoE47NVEe-lF4M30rbgug" />
+    </model:endEvent>
+    <model:endEvent id="_mvqngK0DEe-Pw-DuHJ1-6A" name="End">
+      <model:terminateEventDefinition id="_RtoE4bNVEe-lF4M30rbgug" />
+    </model:endEvent>
+    <model:serviceTask id="_0ICBsK0BEe-Pw-DuHJ1-6A" name="Vérifier les prescriptions precedentes" />
+    <model:startEvent id="_s4M98K0BEe-Pw-DuHJ1-6A" name="Demande de info sur prescriptions" />
+    <model:userTask id="_qDXnYK0YEe-Pw-DuHJ1-6A" name="Afficher l’historique du patient" />
+    <model:serviceTask id="_QgPycK0YEe-Pw-DuHJ1-6A" name="Récupération des données" />
+    <model:startEvent id="_V8RoMK0WEe-Pw-DuHJ1-6A" name="Consultation des info patient" />
+    <model:endEvent id="_4PyCwK0YEe-Pw-DuHJ1-6A" name="Fin du processus de suivi patient">
+      <model:terminateEventDefinition id="_RtrIMbNVEe-lF4M30rbgug" />
+    </model:endEvent>
+    <model:serviceTask id="_-mZZ0K0IEe-Pw-DuHJ1-6A" name="Notifier le patient" />
+    <model:endEvent id="_Cnge0K0JEe-Pw-DuHJ1-6A" name="End">
+      <model:terminateEventDefinition id="_RtwAsrNVEe-lF4M30rbgug" />
+    </model:endEvent>
+    <model:serviceTask id="_zgW5gK0IEe-Pw-DuHJ1-6A" name="Enregistrer le rendez-vous" />
+    <model:endEvent id="_h-oSsK0JEe-Pw-DuHJ1-6A" name="Médecin indisponible" />
+    <model:exclusiveGateway id="_9htXwK0KEe-Pw-DuHJ1-6A" name="." />
+    <model:serviceTask id="_beZ8YK0IEe-Pw-DuHJ1-6A" name="Disponible?" />
+    <model:startEvent id="_ZhuNQK0IEe-Pw-DuHJ1-6A" name="Demande de rendez-vous" />
+    <model:endEvent id="_D1trcK0WEe-Pw-DuHJ1-6A" name="Fin de la notification">
+      <model:terminateEventDefinition id="_RtuLgbNVEe-lF4M30rbgug" />
+    </model:endEvent>
+    <model:serviceTask id="_4qMOMK0VEe-Pw-DuHJ1-6A" name="Envoyer notification" />
+    <model:startEvent id="_sJNTgK0NEe-Pw-DuHJ1-6A" name="Déclenchement d&#39;une notification" />
+    <model:sequenceFlow id="_qDzhqKwuEe-Pw-DuHJ1-6A" name="" sourceRef="_qDzhk6wuEe-Pw-DuHJ1-6A" targetRef="_FzGkAKz8Ee-Pw-DuHJ1-6A" />
+    <model:sequenceFlow id="_csinoK0BEe-Pw-DuHJ1-6A" name="" sourceRef="_Hmv5oK0BEe-Pw-DuHJ1-6A" targetRef="_csdvIK0BEe-Pw-DuHJ1-6A" />
+    <model:sequenceFlow id="_Gv1i8K0FEe-Pw-DuHJ1-6A" name="" sourceRef="_EH_W8K0FEe-Pw-DuHJ1-6A" targetRef="_QUDEIK0FEe-Pw-DuHJ1-6A" />
+    <model:sequenceFlow id="_MopwcK0FEe-Pw-DuHJ1-6A" name="oui" sourceRef="_QUDEIK0FEe-Pw-DuHJ1-6A" targetRef="_U1GNcK0FEe-Pw-DuHJ1-6A" />
+    <model:sequenceFlow id="_NlYecK0FEe-Pw-DuHJ1-6A" name="non" sourceRef="_QUDEIK0FEe-Pw-DuHJ1-6A" targetRef="_cnSXYK0FEe-Pw-DuHJ1-6A" />
+    <model:sequenceFlow id="_p43iMK0FEe-Pw-DuHJ1-6A" name="" sourceRef="_cnSXYK0FEe-Pw-DuHJ1-6A" targetRef="_p41F8K0FEe-Pw-DuHJ1-6A" />
+    <model:sequenceFlow id="_dwXcIK0BEe-Pw-DuHJ1-6A" name="" sourceRef="_RJsPgK0BEe-Pw-DuHJ1-6A" targetRef="_dwWOAK0BEe-Pw-DuHJ1-6A" />
+    <model:sequenceFlow id="_ydKQwK0AEe-Pw-DuHJ1-6A" name="non" sourceRef="_DdflQK0BEe-Pw-DuHJ1-6A" targetRef="_RJsPgK0BEe-Pw-DuHJ1-6A" />
+    <model:sequenceFlow id="_wosCcK0AEe-Pw-DuHJ1-6A" name="oui" sourceRef="_DdflQK0BEe-Pw-DuHJ1-6A" targetRef="_Hmv5oK0BEe-Pw-DuHJ1-6A" />
+    <model:sequenceFlow id="_EIK9IK0FEe-Pw-DuHJ1-6A" name="" sourceRef="_CeBvgK0FEe-Pw-DuHJ1-6A" targetRef="_EH_W8K0FEe-Pw-DuHJ1-6A" />
+    <model:sequenceFlow id="_rIM1YK0AEe-Pw-DuHJ1-6A" name="" sourceRef="_FzGkAKz8Ee-Pw-DuHJ1-6A" targetRef="_DdflQK0BEe-Pw-DuHJ1-6A" />
+    <model:sequenceFlow id="_l8cI4K0FEe-Pw-DuHJ1-6A" name="" sourceRef="_U1GNcK0FEe-Pw-DuHJ1-6A" targetRef="_l8YegK0FEe-Pw-DuHJ1-6A" />
+    <model:sequenceFlow id="_6F9YsK0BEe-Pw-DuHJ1-6A" name="" sourceRef="_0ICBsK0BEe-Pw-DuHJ1-6A" targetRef="_et-pAK0DEe-Pw-DuHJ1-6A" />
+    <model:sequenceFlow id="_7fsLwa0BEe-Pw-DuHJ1-6A" name="oui" sourceRef="_et-pAK0DEe-Pw-DuHJ1-6A" targetRef="_Q6PMUK0DEe-Pw-DuHJ1-6A" />
+    <model:sequenceFlow id="_8WkwcK0BEe-Pw-DuHJ1-6A" name="non" sourceRef="_et-pAK0DEe-Pw-DuHJ1-6A" targetRef="_RgHgkK0DEe-Pw-DuHJ1-6A" />
+    <model:sequenceFlow id="_mvu48K0DEe-Pw-DuHJ1-6A" name="" sourceRef="_Q6PMUK0DEe-Pw-DuHJ1-6A" targetRef="_mvqngK0DEe-Pw-DuHJ1-6A" />
+    <model:sequenceFlow id="_pV6RAK0DEe-Pw-DuHJ1-6A" name="" sourceRef="_RgHgkK0DEe-Pw-DuHJ1-6A" targetRef="_pV4b0K0DEe-Pw-DuHJ1-6A" />
+    <model:sequenceFlow id="_0IJWcK0BEe-Pw-DuHJ1-6A" name="" sourceRef="_s4M98K0BEe-Pw-DuHJ1-6A" targetRef="_0ICBsK0BEe-Pw-DuHJ1-6A" />
+    <model:sequenceFlow id="_dav6Aa0YEe-Pw-DuHJ1-6A" name="" sourceRef="_QgPycK0YEe-Pw-DuHJ1-6A" targetRef="_qDXnYK0YEe-Pw-DuHJ1-6A" />
+    <model:sequenceFlow id="_4P1tIK0YEe-Pw-DuHJ1-6A" name="" sourceRef="_qDXnYK0YEe-Pw-DuHJ1-6A" targetRef="_4PyCwK0YEe-Pw-DuHJ1-6A" />
+    <model:sequenceFlow id="_Qh3jEK0YEe-Pw-DuHJ1-6A" name="" sourceRef="_V8RoMK0WEe-Pw-DuHJ1-6A" targetRef="_QgPycK0YEe-Pw-DuHJ1-6A" />
+    <model:sequenceFlow id="_-me5YK0IEe-Pw-DuHJ1-6A" name="" sourceRef="_zgW5gK0IEe-Pw-DuHJ1-6A" targetRef="_-mZZ0K0IEe-Pw-DuHJ1-6A" />
+    <model:sequenceFlow id="_CnnMgK0JEe-Pw-DuHJ1-6A" name="" sourceRef="_-mZZ0K0IEe-Pw-DuHJ1-6A" targetRef="_Cnge0K0JEe-Pw-DuHJ1-6A" />
+    <model:sequenceFlow id="_zgXgka0IEe-Pw-DuHJ1-6A" name="oui" sourceRef="_9htXwK0KEe-Pw-DuHJ1-6A" targetRef="_zgW5gK0IEe-Pw-DuHJ1-6A" />
+    <model:sequenceFlow id="_h-1HAq0JEe-Pw-DuHJ1-6A" name="non" sourceRef="_9htXwK0KEe-Pw-DuHJ1-6A" targetRef="_h-oSsK0JEe-Pw-DuHJ1-6A" />
+    <model:sequenceFlow id="_v_Cu4K0IEe-Pw-DuHJ1-6A" name="" sourceRef="_beZ8YK0IEe-Pw-DuHJ1-6A" targetRef="_9htXwK0KEe-Pw-DuHJ1-6A" />
+    <model:sequenceFlow id="_bes3UK0IEe-Pw-DuHJ1-6A" name="" sourceRef="_ZhuNQK0IEe-Pw-DuHJ1-6A" targetRef="_beZ8YK0IEe-Pw-DuHJ1-6A" />
+    <model:sequenceFlow id="_D121YK0WEe-Pw-DuHJ1-6A" name="" sourceRef="_4qMOMK0VEe-Pw-DuHJ1-6A" targetRef="_D1trcK0WEe-Pw-DuHJ1-6A" />
+    <model:sequenceFlow id="_4qODYK0VEe-Pw-DuHJ1-6A" name="" sourceRef="_sJNTgK0NEe-Pw-DuHJ1-6A" targetRef="_4qMOMK0VEe-Pw-DuHJ1-6A" />
+  </model:process>
+  <di:BPMNDiagram name="MyDiagram">
+    <di:BPMNPlane id="plane__qDzhkKwuEe-Pw-DuHJ1-6A" bpmnElement="_qDzhkKwuEe-Pw-DuHJ1-6A">
+      <di:BPMNShape id="_qDzhxqwuEe-Pw-DuHJ1-6A" bpmnElement="_RriaMLNVEe-lF4M30rbgug" isHorizontal="true">
+        <dc:Bounds x="160" y="80" width="1620" height="2571" />
+      </di:BPMNShape>
+      <di:BPMNShape id="_GxCVgKxEEe-Pw-DuHJ1-6A" bpmnElement="_GxAgUKxEEe-Pw-DuHJ1-6A" isHorizontal="true">
+        <dc:Bounds x="190" y="1883" width="1590" height="768" />
+      </di:BPMNShape>
+      <di:BPMNShape id="_GO-KQKxEEe-Pw-DuHJ1-6A" bpmnElement="_GOnk8KxEEe-Pw-DuHJ1-6A" isHorizontal="true">
+        <dc:Bounds x="190" y="927" width="1590" height="956" />
+      </di:BPMNShape>
+      <di:BPMNShape id="_qDzhyawuEe-Pw-DuHJ1-6A" bpmnElement="_qDzhkqwuEe-Pw-DuHJ1-6A" isHorizontal="true">
+        <dc:Bounds x="190" y="80" width="1590" height="847" />
+      </di:BPMNShape>
+      <di:BPMNShape id="_qDzhz6wuEe-Pw-DuHJ1-6A" bpmnElement="_qDzhk6wuEe-Pw-DuHJ1-6A">
+        <dc:Bounds x="351" y="158" width="30" height="30" />
+        <di:BPMNLabel id="_Rs66QbNVEe-lF4M30rbgug" labelStyle="_Rs66QLNVEe-lF4M30rbgug">
+          <dc:Bounds x="335" y="193" width="64" height="27" />
+        </di:BPMNLabel>
+      </di:BPMNShape>
+      <di:BPMNShape id="_csgycK0BEe-Pw-DuHJ1-6A" bpmnElement="_csdvIK0BEe-Pw-DuHJ1-6A">
+        <dc:Bounds x="1335" y="159" width="30" height="30" />
+        <di:BPMNLabel id="_RtfiALNVEe-lF4M30rbgug" labelStyle="_Rs66QLNVEe-lF4M30rbgug">
+          <dc:Bounds x="1340" y="194" width="20" height="14" />
+        </di:BPMNLabel>
+      </di:BPMNShape>
+      <di:BPMNShape id="_QUGHcK0FEe-Pw-DuHJ1-6A" bpmnElement="_QUDEIK0FEe-Pw-DuHJ1-6A" isMarkerVisible="true">
+        <dc:Bounds x="934" y="599" width="43" height="43" />
+        <di:BPMNLabel id="_RtjMYLNVEe-lF4M30rbgug" labelStyle="_Rs66QLNVEe-lF4M30rbgug">
+          <dc:Bounds x="987" y="614" width="4" height="14" />
+        </di:BPMNLabel>
+      </di:BPMNShape>
+      <di:BPMNShape id="_cnTljK0FEe-Pw-DuHJ1-6A" bpmnElement="_cnSXYK0FEe-Pw-DuHJ1-6A">
+        <dc:Bounds x="1262" y="756" width="176" height="88" />
+      </di:BPMNShape>
+      <di:BPMNShape id="_dwW1E60BEe-Pw-DuHJ1-6A" bpmnElement="_dwWOAK0BEe-Pw-DuHJ1-6A">
+        <dc:Bounds x="1343" y="345" width="30" height="30" />
+        <di:BPMNLabel id="_RtgJELNVEe-lF4M30rbgug" labelStyle="_Rs66QLNVEe-lF4M30rbgug">
+          <dc:Bounds x="1348" y="380" width="20" height="14" />
+        </di:BPMNLabel>
+      </di:BPMNShape>
+      <di:BPMNShape id="_RJtdoK0BEe-Pw-DuHJ1-6A" bpmnElement="_RJsPgK0BEe-Pw-DuHJ1-6A">
+        <dc:Bounds x="995" y="298" width="249" height="123" />
+        <di:BPMNLabel />
+      </di:BPMNShape>
+      <di:BPMNShape id="_Hm0yIK0BEe-Pw-DuHJ1-6A" bpmnElement="_Hmv5oK0BEe-Pw-DuHJ1-6A">
+        <dc:Bounds x="1008" y="127" width="184" height="92" />
+        <di:BPMNLabel />
+      </di:BPMNShape>
+      <di:BPMNShape id="_p42UE60FEe-Pw-DuHJ1-6A" bpmnElement="_p41F8K0FEe-Pw-DuHJ1-6A">
+        <dc:Bounds x="1545" y="785" width="30" height="30" />
+        <di:BPMNLabel id="_RtlooLNVEe-lF4M30rbgug" labelStyle="_Rs66QLNVEe-lF4M30rbgug">
+          <dc:Bounds x="1550" y="820" width="20" height="14" />
+        </di:BPMNLabel>
+      </di:BPMNShape>
+      <di:BPMNShape id="_EIEPcK0FEe-Pw-DuHJ1-6A" bpmnElement="_EH_W8K0FEe-Pw-DuHJ1-6A">
+        <dc:Bounds x="484" y="573" width="191" height="95" />
+        <di:BPMNLabel />
+      </di:BPMNShape>
+      <di:BPMNShape id="_FzLcgKz8Ee-Pw-DuHJ1-6A" bpmnElement="_FzGkAKz8Ee-Pw-DuHJ1-6A">
+        <dc:Bounds x="494" y="207" width="172" height="86" />
+        <di:BPMNLabel />
+      </di:BPMNShape>
+      <di:BPMNShape id="_DdgMUK0BEe-Pw-DuHJ1-6A" bpmnElement="_DdflQK0BEe-Pw-DuHJ1-6A" isMarkerVisible="true">
+        <dc:Bounds x="812" y="228" width="43" height="43" />
+        <di:BPMNLabel id="_RtPqYLNVEe-lF4M30rbgug" labelStyle="_Rs66QLNVEe-lF4M30rbgug">
+          <dc:Bounds x="865" y="236.5" width="64" height="27" />
+        </di:BPMNLabel>
+      </di:BPMNShape>
+      <di:BPMNShape id="_U1IpsK0FEe-Pw-DuHJ1-6A" bpmnElement="_U1GNcK0FEe-Pw-DuHJ1-6A">
+        <dc:Bounds x="1169" y="490" width="161" height="80" />
+      </di:BPMNShape>
+      <di:BPMNShape id="_l8a6wK0FEe-Pw-DuHJ1-6A" bpmnElement="_l8YegK0FEe-Pw-DuHJ1-6A">
+        <dc:Bounds x="1515" y="499" width="30" height="30" />
+        <di:BPMNLabel id="_RtlBkbNVEe-lF4M30rbgug" labelStyle="_Rs66QLNVEe-lF4M30rbgug">
+          <dc:Bounds x="1520" y="534" width="20" height="14" />
+        </di:BPMNLabel>
+      </di:BPMNShape>
+      <di:BPMNShape id="_CezLkK0FEe-Pw-DuHJ1-6A" bpmnElement="_CeBvgK0FEe-Pw-DuHJ1-6A">
+        <dc:Bounds x="565" y="495" width="30" height="30" />
+        <di:BPMNLabel id="_RtgJEbNVEe-lF4M30rbgug" labelStyle="_Rs66QLNVEe-lF4M30rbgug">
+          <dc:Bounds x="550" y="457.5" width="60" height="27" />
+        </di:BPMNLabel>
+      </di:BPMNShape>
+      <di:BPMNShape id="_et_QE60DEe-Pw-DuHJ1-6A" bpmnElement="_et-pAK0DEe-Pw-DuHJ1-6A" isMarkerVisible="true">
+        <dc:Bounds x="976" y="1088" width="43" height="43" />
+        <di:BPMNLabel id="_RtoE4LNVEe-lF4M30rbgug" labelStyle="_Rs66QLNVEe-lF4M30rbgug">
+          <dc:Bounds x="1029" y="1097" width="62" height="27" />
+        </di:BPMNLabel>
+      </di:BPMNShape>
+      <di:BPMNShape id="_Q6lKkK0DEe-Pw-DuHJ1-6A" bpmnElement="_Q6PMUK0DEe-Pw-DuHJ1-6A">
+        <dc:Bounds x="1148" y="981" width="163" height="81" />
+      </di:BPMNShape>
+      <di:BPMNShape id="_RgIHoK0DEe-Pw-DuHJ1-6A" bpmnElement="_RgHgkK0DEe-Pw-DuHJ1-6A">
+        <dc:Bounds x="1177" y="1154" width="186" height="92" />
+        <di:BPMNLabel />
+      </di:BPMNShape>
+      <di:BPMNShape id="_pV5p8K0DEe-Pw-DuHJ1-6A" bpmnElement="_pV4b0K0DEe-Pw-DuHJ1-6A">
+        <dc:Bounds x="1435" y="1185" width="30" height="30" />
+        <di:BPMNLabel id="_Rtor8LNVEe-lF4M30rbgug" labelStyle="_Rs66QLNVEe-lF4M30rbgug">
+          <dc:Bounds x="1440" y="1220" width="20" height="14" />
+        </di:BPMNLabel>
+      </di:BPMNShape>
+      <di:BPMNShape id="_mvtDwK0DEe-Pw-DuHJ1-6A" bpmnElement="_mvqngK0DEe-Pw-DuHJ1-6A">
+        <dc:Bounds x="1418" y="1011" width="30" height="30" />
+        <di:BPMNLabel id="_RtoE4rNVEe-lF4M30rbgug" labelStyle="_Rs66QLNVEe-lF4M30rbgug">
+          <dc:Bounds x="1423" y="1046" width="20" height="14" />
+        </di:BPMNLabel>
+      </di:BPMNShape>
+      <di:BPMNShape id="_0IFsEK0BEe-Pw-DuHJ1-6A" bpmnElement="_0ICBsK0BEe-Pw-DuHJ1-6A">
+        <dc:Bounds x="748" y="1059" width="204" height="101" />
+        <di:BPMNLabel />
+      </di:BPMNShape>
+      <di:BPMNShape id="_s4PaMK0BEe-Pw-DuHJ1-6A" bpmnElement="_s4M98K0BEe-Pw-DuHJ1-6A">
+        <dc:Bounds x="625" y="1085" width="30" height="30" />
+        <di:BPMNLabel id="_RtmPsLNVEe-lF4M30rbgug" labelStyle="_Rs66QLNVEe-lF4M30rbgug">
+          <dc:Bounds x="599" y="1120" width="84" height="27" />
+        </di:BPMNLabel>
+      </di:BPMNShape>
+      <di:BPMNShape id="_qDjNkK0YEe-Pw-DuHJ1-6A" bpmnElement="_qDXnYK0YEe-Pw-DuHJ1-6A">
+        <dc:Bounds x="1181" y="1356" width="177" height="88" />
+      </di:BPMNShape>
+      <di:BPMNShape id="_QhUwgK0YEe-Pw-DuHJ1-6A" bpmnElement="_QgPycK0YEe-Pw-DuHJ1-6A">
+        <dc:Bounds x="858" y="1347" width="211" height="105" />
+        <di:BPMNLabel />
+      </di:BPMNShape>
+      <di:BPMNShape id="_V8WgsK0WEe-Pw-DuHJ1-6A" bpmnElement="_V8RoMK0WEe-Pw-DuHJ1-6A">
+        <dc:Bounds x="715" y="1385" width="30" height="30" />
+        <di:BPMNLabel id="_Rtp6ELNVEe-lF4M30rbgug" labelStyle="_Rs66QLNVEe-lF4M30rbgug">
+          <dc:Bounds x="690" y="1420" width="83" height="27" />
+        </di:BPMNLabel>
+      </di:BPMNShape>
+      <di:BPMNShape id="_4P0fAK0YEe-Pw-DuHJ1-6A" bpmnElement="_4PyCwK0YEe-Pw-DuHJ1-6A">
+        <dc:Bounds x="1465" y="1374" width="30" height="30" />
+        <di:BPMNLabel id="_RtrvQLNVEe-lF4M30rbgug" labelStyle="_Rs66QLNVEe-lF4M30rbgug">
+          <dc:Bounds x="1438" y="1409" width="85" height="27" />
+        </di:BPMNLabel>
+      </di:BPMNShape>
+      <di:BPMNShape id="_-mdrQa0IEe-Pw-DuHJ1-6A" bpmnElement="_-mZZ0K0IEe-Pw-DuHJ1-6A">
+        <dc:Bounds x="1339" y="2299" width="147" height="73" />
+      </di:BPMNShape>
+      <di:BPMNShape id="_Cnl-YK0JEe-Pw-DuHJ1-6A" bpmnElement="_Cnge0K0JEe-Pw-DuHJ1-6A">
+        <dc:Bounds x="1393" y="2457" width="30" height="30" />
+        <di:BPMNLabel id="_RtwnwLNVEe-lF4M30rbgug" labelStyle="_Rs66QLNVEe-lF4M30rbgug">
+          <dc:Bounds x="1398" y="2492" width="20" height="14" />
+        </di:BPMNLabel>
+      </di:BPMNShape>
+      <di:BPMNShape id="_zgW5ia0IEe-Pw-DuHJ1-6A" bpmnElement="_zgW5gK0IEe-Pw-DuHJ1-6A">
+        <dc:Bounds x="1102" y="2294" width="169" height="84" />
+      </di:BPMNShape>
+      <di:BPMNShape id="_h-0f8K0JEe-Pw-DuHJ1-6A" bpmnElement="_h-oSsK0JEe-Pw-DuHJ1-6A">
+        <dc:Bounds x="870" y="2237" width="30" height="30" />
+        <di:BPMNLabel id="_RtwAsbNVEe-lF4M30rbgug" labelStyle="_Rs66QLNVEe-lF4M30rbgug">
+          <dc:Bounds x="855" y="2199.5" width="59" height="27" />
+        </di:BPMNLabel>
+      </di:BPMNShape>
+      <di:BPMNShape id="_9hxpMK0KEe-Pw-DuHJ1-6A" bpmnElement="_9htXwK0KEe-Pw-DuHJ1-6A" isMarkerVisible="true">
+        <dc:Bounds x="863" y="2314" width="43" height="43" />
+        <di:BPMNLabel id="_RttkcbNVEe-lF4M30rbgug" labelStyle="_Rs66QLNVEe-lF4M30rbgug">
+          <dc:Bounds x="883" y="2362" width="4" height="14" />
+        </di:BPMNLabel>
+      </di:BPMNShape>
+      <di:BPMNShape id="_behRIK0IEe-Pw-DuHJ1-6A" bpmnElement="_beZ8YK0IEe-Pw-DuHJ1-6A">
+        <dc:Bounds x="622" y="2286" width="175" height="87" />
+        <di:BPMNLabel />
+      </di:BPMNShape>
+      <di:BPMNShape id="_ZiZisK0IEe-Pw-DuHJ1-6A" bpmnElement="_ZhuNQK0IEe-Pw-DuHJ1-6A">
+        <dc:Bounds x="445" y="2315" width="30" height="30" />
+        <di:BPMNLabel id="_RtwAsLNVEe-lF4M30rbgug" labelStyle="_Rs66QLNVEe-lF4M30rbgug">
+          <dc:Bounds x="429" y="2350" width="64" height="27" />
+        </di:BPMNLabel>
+      </di:BPMNShape>
+      <di:BPMNShape id="_D10ZIK0WEe-Pw-DuHJ1-6A" bpmnElement="_D1trcK0WEe-Pw-DuHJ1-6A">
+        <dc:Bounds x="1253" y="2022" width="30" height="30" />
+        <di:BPMNLabel id="_RtuLgrNVEe-lF4M30rbgug" labelStyle="_Rs66QLNVEe-lF4M30rbgug">
+          <dc:Bounds x="1242" y="2057" width="53" height="27" />
+        </di:BPMNLabel>
+      </di:BPMNShape>
+      <di:BPMNShape id="_4qNcUK0VEe-Pw-DuHJ1-6A" bpmnElement="_4qMOMK0VEe-Pw-DuHJ1-6A">
+        <dc:Bounds x="873" y="1998" width="166" height="83" />
+      </di:BPMNShape>
+      <di:BPMNShape id="_sJaH0K0NEe-Pw-DuHJ1-6A" bpmnElement="_sJNTgK0NEe-Pw-DuHJ1-6A">
+        <dc:Bounds x="708" y="2025" width="30" height="30" />
+        <di:BPMNLabel id="_RttkcrNVEe-lF4M30rbgug" labelStyle="_Rs66QLNVEe-lF4M30rbgug">
+          <dc:Bounds x="683" y="2060" width="83" height="27" />
+        </di:BPMNLabel>
+      </di:BPMNShape>
+      <di:BPMNEdge id="_qDzh3qwuEe-Pw-DuHJ1-6A" bpmnElement="_qDzhqKwuEe-Pw-DuHJ1-6A">
+        <di_1:waypoint x="381" y="173" />
+        <di_1:waypoint x="438" y="173" />
+        <di_1:waypoint x="438" y="250" />
+        <di_1:waypoint x="494" y="250" />
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_rIRt4K0AEe-Pw-DuHJ1-6A" bpmnElement="_rIM1YK0AEe-Pw-DuHJ1-6A">
+        <di_1:waypoint x="666" y="249" />
+        <di_1:waypoint x="813" y="249" />
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_wosCc60AEe-Pw-DuHJ1-6A" bpmnElement="_wosCcK0AEe-Pw-DuHJ1-6A">
+        <di_1:waypoint x="834" y="229" />
+        <di_1:waypoint x="834" y="172" />
+        <di_1:waypoint x="1008" y="172" />
+        <di:BPMNLabel>
+          <dc:Bounds x="815" y="193" width="15" height="14" />
+        </di:BPMNLabel>
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_ydK30K0AEe-Pw-DuHJ1-6A" bpmnElement="_ydKQwK0AEe-Pw-DuHJ1-6A">
+        <di_1:waypoint x="833" y="271" />
+        <di_1:waypoint x="833" y="360" />
+        <di_1:waypoint x="995" y="360" />
+        <di:BPMNLabel>
+          <dc:Bounds x="911" y="370" width="19" height="14" />
+        </di:BPMNLabel>
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_csj1wK0BEe-Pw-DuHJ1-6A" bpmnElement="_csinoK0BEe-Pw-DuHJ1-6A">
+        <di_1:waypoint x="1192" y="173" />
+        <di_1:waypoint x="1335" y="173" />
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_dwYDMK0BEe-Pw-DuHJ1-6A" bpmnElement="_dwXcIK0BEe-Pw-DuHJ1-6A">
+        <di_1:waypoint x="1244" y="360" />
+        <di_1:waypoint x="1343" y="360" />
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_0IKkkK0BEe-Pw-DuHJ1-6A" bpmnElement="_0IJWcK0BEe-Pw-DuHJ1-6A">
+        <di_1:waypoint x="653" y="1106" />
+        <di_1:waypoint x="748" y="1100" />
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_6F9Ys60BEe-Pw-DuHJ1-6A" bpmnElement="_6F9YsK0BEe-Pw-DuHJ1-6A">
+        <di_1:waypoint x="952" y="1105" />
+        <di_1:waypoint x="964" y="1105" />
+        <di_1:waypoint x="964" y="1112" />
+        <di_1:waypoint x="979" y="1112" />
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_7fsy0q0BEe-Pw-DuHJ1-6A" bpmnElement="_7fsLwa0BEe-Pw-DuHJ1-6A">
+        <di_1:waypoint x="998" y="1089" />
+        <di_1:waypoint x="998" y="1021" />
+        <di_1:waypoint x="1148" y="1021" />
+        <di:BPMNLabel>
+          <dc:Bounds x="979" y="1048" width="15" height="14" />
+        </di:BPMNLabel>
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_8Wkwc60BEe-Pw-DuHJ1-6A" bpmnElement="_8WkwcK0BEe-Pw-DuHJ1-6A">
+        <di_1:waypoint x="997" y="1131" />
+        <di_1:waypoint x="997" y="1200" />
+        <di_1:waypoint x="1177" y="1200" />
+        <di:BPMNLabel>
+          <dc:Bounds x="1114" y="1176" width="19" height="14" />
+        </di:BPMNLabel>
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_mvwHEq0DEe-Pw-DuHJ1-6A" bpmnElement="_mvu48K0DEe-Pw-DuHJ1-6A">
+        <di_1:waypoint x="1311" y="1026" />
+        <di_1:waypoint x="1358" y="1026" />
+        <di_1:waypoint x="1358" y="1021" />
+        <di_1:waypoint x="1419" y="1021" />
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_pV6RA60DEe-Pw-DuHJ1-6A" bpmnElement="_pV6RAK0DEe-Pw-DuHJ1-6A">
+        <di_1:waypoint x="1363" y="1198" />
+        <di_1:waypoint x="1435" y="1198" />
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_EIOAcK0FEe-Pw-DuHJ1-6A" bpmnElement="_EIK9IK0FEe-Pw-DuHJ1-6A">
+        <di_1:waypoint x="580" y="525" />
+        <di_1:waypoint x="580" y="573" />
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_Gv1i860FEe-Pw-DuHJ1-6A" bpmnElement="_Gv1i8K0FEe-Pw-DuHJ1-6A">
+        <di_1:waypoint x="675" y="620" />
+        <di_1:waypoint x="935" y="620" />
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_Mopwc60FEe-Pw-DuHJ1-6A" bpmnElement="_MopwcK0FEe-Pw-DuHJ1-6A">
+        <di_1:waypoint x="956" y="600" />
+        <di_1:waypoint x="956" y="522" />
+        <di_1:waypoint x="1169" y="522" />
+        <di:BPMNLabel>
+          <dc:Bounds x="1055" y="504" width="15" height="14" />
+        </di:BPMNLabel>
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_NlZFgK0FEe-Pw-DuHJ1-6A" bpmnElement="_NlYecK0FEe-Pw-DuHJ1-6A">
+        <di_1:waypoint x="955" y="642" />
+        <di_1:waypoint x="955" y="800" />
+        <di_1:waypoint x="1262" y="800" />
+        <di:BPMNLabel>
+          <dc:Bounds x="1089" y="819" width="19" height="14" />
+        </di:BPMNLabel>
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_l8cv8K0FEe-Pw-DuHJ1-6A" bpmnElement="_l8cI4K0FEe-Pw-DuHJ1-6A">
+        <di_1:waypoint x="1330" y="522" />
+        <di_1:waypoint x="1517" y="522" />
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_p43iM60FEe-Pw-DuHJ1-6A" bpmnElement="_p43iMK0FEe-Pw-DuHJ1-6A">
+        <di_1:waypoint x="1438" y="800" />
+        <di_1:waypoint x="1545" y="800" />
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_QiFlgK0YEe-Pw-DuHJ1-6A" bpmnElement="_Qh3jEK0YEe-Pw-DuHJ1-6A">
+        <di_1:waypoint x="745" y="1400" />
+        <di_1:waypoint x="858" y="1400" />
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_dawhEK0YEe-Pw-DuHJ1-6A" bpmnElement="_dav6Aa0YEe-Pw-DuHJ1-6A">
+        <di_1:waypoint x="1069" y="1389" />
+        <di_1:waypoint x="1125" y="1389" />
+        <di_1:waypoint x="1125" y="1400" />
+        <di_1:waypoint x="1181" y="1400" />
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_4P2UMK0YEe-Pw-DuHJ1-6A" bpmnElement="_4P1tIK0YEe-Pw-DuHJ1-6A">
+        <di_1:waypoint x="1358" y="1394" />
+        <di_1:waypoint x="1466" y="1394" />
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_-me5Y60IEe-Pw-DuHJ1-6A" bpmnElement="_-me5YK0IEe-Pw-DuHJ1-6A">
+        <di_1:waypoint x="1271" y="2335" />
+        <di_1:waypoint x="1339" y="2335" />
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_CnoaoK0JEe-Pw-DuHJ1-6A" bpmnElement="_CnnMgK0JEe-Pw-DuHJ1-6A">
+        <di_1:waypoint x="1410" y="2372" />
+        <di_1:waypoint x="1410" y="2457" />
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_zgXglK0IEe-Pw-DuHJ1-6A" bpmnElement="_zgXgka0IEe-Pw-DuHJ1-6A">
+        <di_1:waypoint x="906" y="2335" />
+        <di_1:waypoint x="1102" y="2335" />
+        <di:BPMNLabel>
+          <dc:Bounds x="997" y="2317" width="15" height="14" />
+        </di:BPMNLabel>
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_h-1uEK0JEe-Pw-DuHJ1-6A" bpmnElement="_h-1HAq0JEe-Pw-DuHJ1-6A">
+        <di_1:waypoint x="885" y="2315" />
+        <di_1:waypoint x="885" y="2267" />
+        <di:BPMNLabel>
+          <dc:Bounds x="891" y="2275" width="19" height="14" />
+        </di:BPMNLabel>
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_v_DV8K0IEe-Pw-DuHJ1-6A" bpmnElement="_v_Cu4K0IEe-Pw-DuHJ1-6A">
+        <di_1:waypoint x="797" y="2332" />
+        <di_1:waypoint x="867" y="2332" />
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_beyW4K0IEe-Pw-DuHJ1-6A" bpmnElement="_bes3UK0IEe-Pw-DuHJ1-6A">
+        <di_1:waypoint x="475" y="2330" />
+        <di_1:waypoint x="622" y="2330" />
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_D14DgK0WEe-Pw-DuHJ1-6A" bpmnElement="_D121YK0WEe-Pw-DuHJ1-6A">
+        <di_1:waypoint x="1039" y="2038" />
+        <di_1:waypoint x="1253" y="2038" />
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_4qODY60VEe-Pw-DuHJ1-6A" bpmnElement="_4qODYK0VEe-Pw-DuHJ1-6A">
+        <di_1:waypoint x="737" y="2039" />
+        <di_1:waypoint x="873" y="2039" />
+      </di:BPMNEdge>
+    </di:BPMNPlane>
+    <di:BPMNLabelStyle id="_Rs66QLNVEe-lF4M30rbgug">
+      <dc:Font name="Segoe UI" size="9" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" />
+    </di:BPMNLabelStyle>
+  </di:BPMNDiagram>
+</model:definitions>

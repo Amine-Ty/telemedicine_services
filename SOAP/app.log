@@ -1,0 +1,1338 @@
+DEBUG:spyne.model.complex:Got bases for add_prescription from meta: (<class 'spyne.model.complex.ComplexModel'>,)
+DEBUG:spyne.model.complex:Got bases for add_prescriptionResponse from meta: (<class 'spyne.model.complex.ComplexModel'>,)
+DEBUG:spyne.model.complex:Got bases for get_prescription from meta: (<class 'spyne.model.complex.ComplexModel'>,)
+DEBUG:spyne.model.complex:Got bases for get_prescriptionResponse from meta: (<class 'spyne.model.complex.ComplexModel'>,)
+INFO:spyne.application:Initializing application {telemedicine.soap}Application...
+DEBUG:spyne.interface._base:populating app.soap.prescriptions_service.PrescriptionService types...
+DEBUG:spyne.interface._base:  enumerating classes for method 'add_prescription'
+DEBUG:spyne.interface._base:    adding class "<class 'spyne.model.complex.add_prescription'>" for '{telemedicine.soap}add_prescription'
+DEBUG:spyne.interface._base:    adding add_prescription.patient_id = <class 'spyne.model.primitive.number.Integer'>
+DEBUG:spyne.interface._base:    adding class "<class 'spyne.model.primitive.number.Integer'>" for '{http://www.w3.org/2001/XMLSchema}integer'
+DEBUG:spyne.interface._base:    adding add_prescription.doctor_id = <class 'spyne.model.primitive.number.Integer'>
+DEBUG:spyne.interface._base:    adding add_prescription.content = <class 'spyne.model.primitive.string.Unicode'>
+DEBUG:spyne.interface._base:    adding class "<class 'spyne.model.primitive.string.Unicode'>" for '{http://www.w3.org/2001/XMLSchema}string'
+DEBUG:spyne.interface._base:    adding class "<class 'spyne.model.complex.add_prescriptionResponse'>" for '{telemedicine.soap}add_prescriptionResponse'
+DEBUG:spyne.interface._base:    adding add_prescriptionResponse.add_prescriptionResult = <class 'spyne.model.primitive.string.Unicode'>
+DEBUG:spyne.interface._base:  enumerating classes for method 'get_prescription'
+DEBUG:spyne.interface._base:    adding class "<class 'spyne.model.complex.get_prescription'>" for '{telemedicine.soap}get_prescription'
+DEBUG:spyne.interface._base:    adding get_prescription.prescription_id = <class 'spyne.model.primitive.number.Integer'>
+DEBUG:spyne.interface._base:    adding class "<class 'spyne.model.complex.get_prescriptionResponse'>" for '{telemedicine.soap}get_prescriptionResponse'
+DEBUG:spyne.interface._base:    adding get_prescriptionResponse.get_prescriptionResult = <class 'spyne.model.primitive.string.Unicode'>
+DEBUG:spyne.interface._base:populating 'app.soap.prescriptions_service.PrescriptionService' routes...
+DEBUG:spyne.interface._base:  adding method PrescriptionService.add_prescription to match '{telemedicine.soap}add_prescription' tag.
+DEBUG:spyne.interface._base:  adding method PrescriptionService.get_prescription to match '{telemedicine.soap}get_prescription' tag.
+DEBUG:spyne.interface._base:From this point on, you're not supposed to make any changes to the class and method structure of the exposed services.
+DEBUG:spyne.interface.xml_schema:generating schema for targetNamespace='telemedicine.soap', prefix: 'tns' in dir '/var/folders/8t/0rk_0_zs50l49nwss08qx4g40000gn/T/spynednnoq1v6'
+DEBUG:spyne.interface.xml_schema:writing '/var/folders/8t/0rk_0_zs50l49nwss08qx4g40000gn/T/spynednnoq1v6/tns.xsd' for ns telemedicine.soap
+DEBUG:spyne.interface.xml_schema:Schema built. Removed '/var/folders/8t/0rk_0_zs50l49nwss08qx4g40000gn/T/spynednnoq1v6'
+WARNING:spyne.util.appreg:Overwriting application ('telemedicine.soap', 'Application')(<spyne.application.Application object at 0x10280e8c0>).
+DEBUG:spyne.util.appreg:Stack trace of the instantiation:
+  File "/Users/amine/Desktop/telemedicine_services/run_soap.py", line 3, in <module>
+    from app.soap.medical_records_service import wsgi_app as medical_records_app
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/amine/Desktop/telemedicine_services/app/soap/__init__.py", line 1, in <module>
+    from .medical_records_service import wsgi_app as medical_records_app
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/amine/Desktop/telemedicine_services/app/soap/medical_records_service.py", line 61, in <module>
+    application = Application(
+  File "/Users/amine/.pyenv/versions/3.10.12/lib/python3.10/site-packages/spyne/application.py", line 151, in __init__
+    register_application(self)
+  File "/Users/amine/.pyenv/versions/3.10.12/lib/python3.10/site-packages/spyne/util/appreg.py", line 56, in register_application
+    stack = traceback.format_stack()
+
+DEBUG:spyne.util.appreg:Registering <spyne.application.Application object at 0x10280e8c0> as ('telemedicine.soap', 'Application')
+DEBUG:spyne.model.complex:Got bases for Iterable from orig: (<class 'spyne.model.complex.Array'>,)
+DEBUG:spyne.model._base:	string: setting max_occurs=Decimal('Infinity')
+DEBUG:spyne.model.complex:Got bases for add_doctor from meta: (<class 'spyne.model.complex.ComplexModel'>,)
+DEBUG:spyne.model.complex:Got bases for add_doctorResponse from meta: (<class 'spyne.model.complex.ComplexModel'>,)
+DEBUG:spyne.model.complex:Got bases for update_doctor from meta: (<class 'spyne.model.complex.ComplexModel'>,)
+DEBUG:spyne.model.complex:Got bases for update_doctorResponse from meta: (<class 'spyne.model.complex.ComplexModel'>,)
+DEBUG:spyne.model.complex:Got bases for delete_doctor from meta: (<class 'spyne.model.complex.ComplexModel'>,)
+DEBUG:spyne.model.complex:Got bases for delete_doctorResponse from meta: (<class 'spyne.model.complex.ComplexModel'>,)
+DEBUG:spyne.model.complex:Got bases for list_doctors from meta: (<class 'spyne.model.complex.ComplexModel'>,)
+DEBUG:spyne.model.complex:Got bases for list_doctorsResponse from meta: (<class 'spyne.model.complex.ComplexModel'>,)
+INFO:spyne.application:Initializing application {telemedicine.soap.doctors}Application...
+DEBUG:spyne.interface._base:populating app.soap.doctors_service.DoctorService types...
+DEBUG:spyne.interface._base:  enumerating classes for method 'add_doctor'
+DEBUG:spyne.interface._base:    adding class "<class 'spyne.model.complex.add_doctor'>" for '{telemedicine.soap.doctors}add_doctor'
+DEBUG:spyne.interface._base:    adding add_doctor.doctor_id = <class 'spyne.model.primitive.number.Integer'>
+DEBUG:spyne.interface._base:    adding class "<class 'spyne.model.primitive.number.Integer'>" for '{http://www.w3.org/2001/XMLSchema}integer'
+DEBUG:spyne.interface._base:    adding add_doctor.name = <class 'spyne.model.primitive.string.Unicode'>
+DEBUG:spyne.interface._base:    adding class "<class 'spyne.model.primitive.string.Unicode'>" for '{http://www.w3.org/2001/XMLSchema}string'
+DEBUG:spyne.interface._base:    adding add_doctor.specialty = <class 'spyne.model.primitive.string.Unicode'>
+DEBUG:spyne.interface._base:    adding class "<class 'spyne.model.complex.add_doctorResponse'>" for '{telemedicine.soap.doctors}add_doctorResponse'
+DEBUG:spyne.interface._base:    adding add_doctorResponse.add_doctorResult = <class 'spyne.model.primitive.string.Unicode'>
+DEBUG:spyne.interface._base:  enumerating classes for method 'update_doctor'
+DEBUG:spyne.interface._base:    adding class "<class 'spyne.model.complex.update_doctor'>" for '{telemedicine.soap.doctors}update_doctor'
+DEBUG:spyne.interface._base:    adding update_doctor.doctor_id = <class 'spyne.model.primitive.number.Integer'>
+DEBUG:spyne.interface._base:    adding update_doctor.name = <class 'spyne.model.primitive.string.Unicode'>
+DEBUG:spyne.interface._base:    adding update_doctor.specialty = <class 'spyne.model.primitive.string.Unicode'>
+DEBUG:spyne.interface._base:    adding class "<class 'spyne.model.complex.update_doctorResponse'>" for '{telemedicine.soap.doctors}update_doctorResponse'
+DEBUG:spyne.interface._base:    adding update_doctorResponse.update_doctorResult = <class 'spyne.model.primitive.string.Unicode'>
+DEBUG:spyne.interface._base:  enumerating classes for method 'delete_doctor'
+DEBUG:spyne.interface._base:    adding class "<class 'spyne.model.complex.delete_doctor'>" for '{telemedicine.soap.doctors}delete_doctor'
+DEBUG:spyne.interface._base:    adding delete_doctor.doctor_id = <class 'spyne.model.primitive.number.Integer'>
+DEBUG:spyne.interface._base:    adding class "<class 'spyne.model.complex.delete_doctorResponse'>" for '{telemedicine.soap.doctors}delete_doctorResponse'
+DEBUG:spyne.interface._base:    adding delete_doctorResponse.delete_doctorResult = <class 'spyne.model.primitive.string.Unicode'>
+DEBUG:spyne.interface._base:  enumerating classes for method 'list_doctors'
+DEBUG:spyne.interface._base:    adding class "<class 'spyne.model.complex.list_doctors'>" for '{telemedicine.soap.doctors}list_doctors'
+DEBUG:spyne.interface._base:    adding class "<class 'spyne.model.complex.list_doctorsResponse'>" for '{telemedicine.soap.doctors}list_doctorsResponse'
+DEBUG:spyne.interface._base:    adding list_doctorsResponse.list_doctorsResult = <class 'spyne.model.complex.Iterable'>
+DEBUG:spyne.interface._base:    adding class "<class 'spyne.model.complex.Iterable'>" for '{telemedicine.soap.doctors}stringArray'
+DEBUG:spyne.interface._base:    adding stringArray.string = <class 'spyne.model.primitive.string.Unicode'>
+DEBUG:spyne.interface._base:populating 'app.soap.doctors_service.DoctorService' routes...
+DEBUG:spyne.interface._base:  adding method DoctorService.add_doctor to match '{telemedicine.soap.doctors}add_doctor' tag.
+DEBUG:spyne.interface._base:  adding method DoctorService.update_doctor to match '{telemedicine.soap.doctors}update_doctor' tag.
+DEBUG:spyne.interface._base:  adding method DoctorService.delete_doctor to match '{telemedicine.soap.doctors}delete_doctor' tag.
+DEBUG:spyne.interface._base:  adding method DoctorService.list_doctors to match '{telemedicine.soap.doctors}list_doctors' tag.
+DEBUG:spyne.interface._base:From this point on, you're not supposed to make any changes to the class and method structure of the exposed services.
+DEBUG:spyne.interface.xml_schema:generating schema for targetNamespace='telemedicine.soap.doctors', prefix: 'tns' in dir '/var/folders/8t/0rk_0_zs50l49nwss08qx4g40000gn/T/spyne2ggxqba9'
+DEBUG:spyne.interface.xml_schema:writing '/var/folders/8t/0rk_0_zs50l49nwss08qx4g40000gn/T/spyne2ggxqba9/tns.xsd' for ns telemedicine.soap.doctors
+DEBUG:spyne.interface.xml_schema:Schema built. Removed '/var/folders/8t/0rk_0_zs50l49nwss08qx4g40000gn/T/spyne2ggxqba9'
+DEBUG:spyne.util.appreg:Registering <spyne.application.Application object at 0x10280e560> as ('telemedicine.soap.doctors', 'Application')
+DEBUG:spyne.server.wsgi:Add http header 'host' = ['127.0.0.1:8002']
+DEBUG:spyne.server.wsgi:Add http header 'connection' = ['Keep-Alive']
+DEBUG:spyne.server.wsgi:Add http header 'user_agent' = ['Apache-HttpClient/4.5.5 (Java/16.0.2)']
+DEBUG:spyne.server.wsgi:Add http header 'accept_encoding' = ['gzip,deflate']
+DEBUG:spyne:gc.collect() took around 20ms.
+DEBUG:spyne.server.wsgi:Add http header 'accept_encoding' = ['gzip,deflate']
+DEBUG:spyne.server.wsgi:Add http header 'soapaction' = ['"add_prescription"']
+DEBUG:spyne.server.wsgi:Add http header 'host' = ['127.0.0.1:8002']
+DEBUG:spyne.server.wsgi:Add http header 'connection' = ['Keep-Alive']
+DEBUG:spyne.server.wsgi:Add http header 'user_agent' = ['Apache-HttpClient/4.5.5 (Java/16.0.2)']
+DEBUG:spyne.protocol.xml:Validated ? True
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x10280cbe0> attrcache size: 0
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x10280cbe0> attrcache size: 1
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x10280cbe0> attrcache size: 1
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x10280cbe0> attrcache size: 2
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x10280cbe0> attrcache size: 2
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x10280cbe0> attrcache size: 2
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x10280cbe0> attrcache size: 2
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x10280cbe0> attrcache size: 2
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x10280cbe0> attrcache size: 2
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x10280cbe0> attrcache size: 2
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x10280cbe0> attrcache size: 2
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x10280cbe0> attrcache size: 3
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x10280cbe0> attrcache size: 3
+ERROR:root:Error adding prescription: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x10280cb20> attrcache size: 0
+DEBUG:spyne.protocol._base:PMORPH Skipped: <spyne.protocol.soap.soap11.Soap11 object at 0x10280cb20> is NOT polymorphic
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x10280cb20> attrcache size: 1
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x10280cb20> attrcache size: 1
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x10280cb20> attrcache size: 1
+DEBUG:spyne.protocol._base:PMORPH Skipped: <spyne.protocol.soap.soap11.Soap11 object at 0x10280cb20> is NOT polymorphic
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x10280cb20> attrcache size: 2
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x10280cb20> attrcache size: 2
+DEBUG:spyne:gc.collect() took around 20ms.
+DEBUG:spyne.server.wsgi:Add http header 'accept_encoding' = ['gzip,deflate']
+DEBUG:spyne.server.wsgi:Add http header 'soapaction' = ['"get_medical_record"']
+DEBUG:spyne.server.wsgi:Add http header 'host' = ['127.0.0.1:8001']
+DEBUG:spyne.server.wsgi:Add http header 'connection' = ['Keep-Alive']
+DEBUG:spyne.server.wsgi:Add http header 'user_agent' = ['Apache-HttpClient/4.5.5 (Java/16.0.2)']
+DEBUG:spyne.protocol.xml:Validated ? True
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x100eb4400> attrcache size: 0
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x100eb4400> attrcache size: 1
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x100eb4400> attrcache size: 1
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x100eb4400> attrcache size: 2
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x100eb4400> attrcache size: 2
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x100eb4400> attrcache size: 2
+CRITICAL:spyne.application.server:Aucun dossier trouvé pour le patient ID 1.
+Traceback (most recent call last):
+  File "/Users/amine/.pyenv/versions/3.10.12/lib/python3.10/site-packages/spyne/application.py", line 173, in process_request
+    ctx.out_object = self.call_wrapper(ctx)
+  File "/Users/amine/.pyenv/versions/3.10.12/lib/python3.10/site-packages/spyne/application.py", line 242, in call_wrapper
+    return ctx.descriptor.service_class.call_wrapper(ctx)
+  File "/Users/amine/.pyenv/versions/3.10.12/lib/python3.10/site-packages/spyne/service.py", line 194, in call_wrapper
+    return ctx.function(*args)
+  File "/Users/amine/Desktop/telemedicine_services/app/soap/medical_records_service.py", line 34, in get_medical_record
+    raise ValueError(f"Aucun dossier trouvé pour le patient ID {patient_id}.")
+ValueError: Aucun dossier trouvé pour le patient ID 1.
+DEBUG:spyne.protocol._base:PMORPH Skipped: <spyne.protocol.soap.soap11.Soap11 object at 0x1027ccc40> is NOT polymorphic
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x1027ccc40> attrcache size: 0
+DEBUG:spyne:gc.collect() took around 30ms.
+DEBUG:spyne.server.wsgi:Add http header 'accept_encoding' = ['gzip,deflate']
+DEBUG:spyne.server.wsgi:Add http header 'soapaction' = ['"add_medical_record"']
+DEBUG:spyne.server.wsgi:Add http header 'host' = ['127.0.0.1:8001']
+DEBUG:spyne.server.wsgi:Add http header 'connection' = ['Keep-Alive']
+DEBUG:spyne.server.wsgi:Add http header 'user_agent' = ['Apache-HttpClient/4.5.5 (Java/16.0.2)']
+DEBUG:spyne.protocol.xml:Validated ? True
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x100eb4400> attrcache size: 2
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x100eb4400> attrcache size: 3
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x100eb4400> attrcache size: 3
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x100eb4400> attrcache size: 4
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x100eb4400> attrcache size: 4
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x100eb4400> attrcache size: 4
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x100eb4400> attrcache size: 4
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x100eb4400> attrcache size: 4
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x100eb4400> attrcache size: 4
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x100eb4400> attrcache size: 4
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x100eb4400> attrcache size: 5
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x100eb4400> attrcache size: 5
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x100eb4400> attrcache size: 5
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x100eb4400> attrcache size: 5
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x100eb4400> attrcache size: 5
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x100eb4400> attrcache size: 5
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x100eb4400> attrcache size: 5
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x100eb4400> attrcache size: 5
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x100eb4400> attrcache size: 5
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x100eb4400> attrcache size: 5
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x100eb4400> attrcache size: 5
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x100eb4400> attrcache size: 5
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x100eb4400> attrcache size: 5
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x100eb4400> attrcache size: 5
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x100eb4400> attrcache size: 5
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x100eb4400> attrcache size: 6
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x100eb4400> attrcache size: 6
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x100eb4400> attrcache size: 7
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x100eb4400> attrcache size: 7
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x1027ccc40> attrcache size: 1
+DEBUG:spyne.protocol._base:PMORPH Skipped: <spyne.protocol.soap.soap11.Soap11 object at 0x1027ccc40> is NOT polymorphic
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x1027ccc40> attrcache size: 2
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x1027ccc40> attrcache size: 2
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x1027ccc40> attrcache size: 2
+DEBUG:spyne.protocol._base:PMORPH Skipped: <spyne.protocol.soap.soap11.Soap11 object at 0x1027ccc40> is NOT polymorphic
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x1027ccc40> attrcache size: 3
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x1027ccc40> attrcache size: 3
+DEBUG:spyne:gc.collect() took around 20ms.
+DEBUG:spyne.server.wsgi:Add http header 'accept_encoding' = ['gzip,deflate']
+DEBUG:spyne.server.wsgi:Add http header 'soapaction' = ['"get_medical_record"']
+DEBUG:spyne.server.wsgi:Add http header 'host' = ['127.0.0.1:8001']
+DEBUG:spyne.server.wsgi:Add http header 'connection' = ['Keep-Alive']
+DEBUG:spyne.server.wsgi:Add http header 'user_agent' = ['Apache-HttpClient/4.5.5 (Java/16.0.2)']
+DEBUG:spyne.protocol.xml:Validated ? True
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x100eb4400> attrcache size: 7
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x100eb4400> attrcache size: 7
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x100eb4400> attrcache size: 7
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x100eb4400> attrcache size: 7
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x100eb4400> attrcache size: 7
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x100eb4400> attrcache size: 7
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x1027ccc40> attrcache size: 3
+DEBUG:spyne.protocol._base:PMORPH Skipped: <spyne.protocol.soap.soap11.Soap11 object at 0x1027ccc40> is NOT polymorphic
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x1027ccc40> attrcache size: 4
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x1027ccc40> attrcache size: 4
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x1027ccc40> attrcache size: 4
+DEBUG:spyne.protocol._base:PMORPH Skipped: <spyne.protocol.soap.soap11.Soap11 object at 0x1027ccc40> is NOT polymorphic
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x1027ccc40> attrcache size: 5
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x1027ccc40> attrcache size: 5
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x1027ccc40> attrcache size: 5
+DEBUG:spyne.protocol._base:PMORPH Skipped: <spyne.protocol.soap.soap11.Soap11 object at 0x1027ccc40> is NOT polymorphic
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x1027ccc40> attrcache size: 6
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x1027ccc40> attrcache size: 6
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x1027ccc40> attrcache size: 6
+DEBUG:spyne.protocol._base:PMORPH Skipped: <spyne.protocol.soap.soap11.Soap11 object at 0x1027ccc40> is NOT polymorphic
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x1027ccc40> attrcache size: 6
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x1027ccc40> attrcache size: 6
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x1027ccc40> attrcache size: 6
+DEBUG:spyne.protocol._base:PMORPH Skipped: <spyne.protocol.soap.soap11.Soap11 object at 0x1027ccc40> is NOT polymorphic
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x1027ccc40> attrcache size: 6
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x1027ccc40> attrcache size: 6
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x1027ccc40> attrcache size: 6
+DEBUG:spyne.protocol._base:PMORPH Skipped: <spyne.protocol.soap.soap11.Soap11 object at 0x1027ccc40> is NOT polymorphic
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x1027ccc40> attrcache size: 6
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x1027ccc40> attrcache size: 6
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x1027ccc40> attrcache size: 6
+DEBUG:spyne.protocol._base:PMORPH Skipped: <spyne.protocol.soap.soap11.Soap11 object at 0x1027ccc40> is NOT polymorphic
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x1027ccc40> attrcache size: 6
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x1027ccc40> attrcache size: 6
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x1027ccc40> attrcache size: 6
+DEBUG:spyne.protocol._base:PMORPH Skipped: <spyne.protocol.soap.soap11.Soap11 object at 0x1027ccc40> is NOT polymorphic
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x1027ccc40> attrcache size: 6
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x1027ccc40> attrcache size: 6
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x1027ccc40> attrcache size: 6
+DEBUG:spyne.protocol._base:PMORPH Skipped: <spyne.protocol.soap.soap11.Soap11 object at 0x1027ccc40> is NOT polymorphic
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x1027ccc40> attrcache size: 7
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x1027ccc40> attrcache size: 7
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x1027ccc40> attrcache size: 7
+DEBUG:spyne.protocol._base:PMORPH Skipped: <spyne.protocol.soap.soap11.Soap11 object at 0x1027ccc40> is NOT polymorphic
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x1027ccc40> attrcache size: 8
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x1027ccc40> attrcache size: 8
+DEBUG:spyne:gc.collect() took around 20ms.
+DEBUG:spyne.model.complex:Got bases for add_prescription from meta: (<class 'spyne.model.complex.ComplexModel'>,)
+DEBUG:spyne.model.complex:Got bases for add_prescriptionResponse from meta: (<class 'spyne.model.complex.ComplexModel'>,)
+DEBUG:spyne.model.complex:Got bases for get_prescription from meta: (<class 'spyne.model.complex.ComplexModel'>,)
+DEBUG:spyne.model.complex:Got bases for get_prescriptionResponse from meta: (<class 'spyne.model.complex.ComplexModel'>,)
+INFO:spyne.application:Initializing application {telemedicine.soap}Application...
+DEBUG:spyne.interface._base:populating app.soap.prescriptions_service.PrescriptionService types...
+DEBUG:spyne.interface._base:  enumerating classes for method 'add_prescription'
+DEBUG:spyne.interface._base:    adding class "<class 'spyne.model.complex.add_prescription'>" for '{telemedicine.soap}add_prescription'
+DEBUG:spyne.interface._base:    adding add_prescription.patient_id = <class 'spyne.model.primitive.number.Integer'>
+DEBUG:spyne.interface._base:    adding class "<class 'spyne.model.primitive.number.Integer'>" for '{http://www.w3.org/2001/XMLSchema}integer'
+DEBUG:spyne.interface._base:    adding add_prescription.doctor_id = <class 'spyne.model.primitive.number.Integer'>
+DEBUG:spyne.interface._base:    adding add_prescription.content = <class 'spyne.model.primitive.string.Unicode'>
+DEBUG:spyne.interface._base:    adding class "<class 'spyne.model.primitive.string.Unicode'>" for '{http://www.w3.org/2001/XMLSchema}string'
+DEBUG:spyne.interface._base:    adding class "<class 'spyne.model.complex.add_prescriptionResponse'>" for '{telemedicine.soap}add_prescriptionResponse'
+DEBUG:spyne.interface._base:    adding add_prescriptionResponse.add_prescriptionResult = <class 'spyne.model.primitive.string.Unicode'>
+DEBUG:spyne.interface._base:  enumerating classes for method 'get_prescription'
+DEBUG:spyne.interface._base:    adding class "<class 'spyne.model.complex.get_prescription'>" for '{telemedicine.soap}get_prescription'
+DEBUG:spyne.interface._base:    adding get_prescription.prescription_id = <class 'spyne.model.primitive.number.Integer'>
+DEBUG:spyne.interface._base:    adding class "<class 'spyne.model.complex.get_prescriptionResponse'>" for '{telemedicine.soap}get_prescriptionResponse'
+DEBUG:spyne.interface._base:    adding get_prescriptionResponse.get_prescriptionResult = <class 'spyne.model.primitive.string.Unicode'>
+DEBUG:spyne.interface._base:populating 'app.soap.prescriptions_service.PrescriptionService' routes...
+DEBUG:spyne.interface._base:  adding method PrescriptionService.add_prescription to match '{telemedicine.soap}add_prescription' tag.
+DEBUG:spyne.interface._base:  adding method PrescriptionService.get_prescription to match '{telemedicine.soap}get_prescription' tag.
+DEBUG:spyne.interface._base:From this point on, you're not supposed to make any changes to the class and method structure of the exposed services.
+DEBUG:spyne.interface.xml_schema:generating schema for targetNamespace='telemedicine.soap', prefix: 'tns' in dir '/var/folders/8t/0rk_0_zs50l49nwss08qx4g40000gn/T/spynehrtpu63_'
+DEBUG:spyne.interface.xml_schema:writing '/var/folders/8t/0rk_0_zs50l49nwss08qx4g40000gn/T/spynehrtpu63_/tns.xsd' for ns telemedicine.soap
+DEBUG:spyne.interface.xml_schema:Schema built. Removed '/var/folders/8t/0rk_0_zs50l49nwss08qx4g40000gn/T/spynehrtpu63_'
+WARNING:spyne.util.appreg:Overwriting application ('telemedicine.soap', 'Application')(<spyne.application.Application object at 0x1035a3f10>).
+DEBUG:spyne.util.appreg:Stack trace of the instantiation:
+  File "/Users/amine/Desktop/telemedicine_services/run_soap.py", line 3, in <module>
+    from app.soap.medical_records_service import wsgi_app as medical_records_app
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/amine/Desktop/telemedicine_services/app/soap/__init__.py", line 1, in <module>
+    from .medical_records_service import wsgi_app as medical_records_app
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/amine/Desktop/telemedicine_services/app/soap/medical_records_service.py", line 61, in <module>
+    application = Application(
+  File "/Users/amine/.pyenv/versions/3.10.12/lib/python3.10/site-packages/spyne/application.py", line 151, in __init__
+    register_application(self)
+  File "/Users/amine/.pyenv/versions/3.10.12/lib/python3.10/site-packages/spyne/util/appreg.py", line 56, in register_application
+    stack = traceback.format_stack()
+
+DEBUG:spyne.util.appreg:Registering <spyne.application.Application object at 0x1035a3f10> as ('telemedicine.soap', 'Application')
+DEBUG:spyne.model.complex:Got bases for Iterable from orig: (<class 'spyne.model.complex.Array'>,)
+DEBUG:spyne.model._base:	string: setting max_occurs=Decimal('Infinity')
+DEBUG:spyne.model.complex:Got bases for add_doctor from meta: (<class 'spyne.model.complex.ComplexModel'>,)
+DEBUG:spyne.model.complex:Got bases for add_doctorResponse from meta: (<class 'spyne.model.complex.ComplexModel'>,)
+DEBUG:spyne.model.complex:Got bases for update_doctor from meta: (<class 'spyne.model.complex.ComplexModel'>,)
+DEBUG:spyne.model.complex:Got bases for update_doctorResponse from meta: (<class 'spyne.model.complex.ComplexModel'>,)
+DEBUG:spyne.model.complex:Got bases for delete_doctor from meta: (<class 'spyne.model.complex.ComplexModel'>,)
+DEBUG:spyne.model.complex:Got bases for delete_doctorResponse from meta: (<class 'spyne.model.complex.ComplexModel'>,)
+DEBUG:spyne.model.complex:Got bases for list_doctors from meta: (<class 'spyne.model.complex.ComplexModel'>,)
+DEBUG:spyne.model.complex:Got bases for list_doctorsResponse from meta: (<class 'spyne.model.complex.ComplexModel'>,)
+INFO:spyne.application:Initializing application {telemedicine.soap.doctors}Application...
+DEBUG:spyne.interface._base:populating app.soap.doctors_service.DoctorService types...
+DEBUG:spyne.interface._base:  enumerating classes for method 'add_doctor'
+DEBUG:spyne.interface._base:    adding class "<class 'spyne.model.complex.add_doctor'>" for '{telemedicine.soap.doctors}add_doctor'
+DEBUG:spyne.interface._base:    adding add_doctor.doctor_id = <class 'spyne.model.primitive.number.Integer'>
+DEBUG:spyne.interface._base:    adding class "<class 'spyne.model.primitive.number.Integer'>" for '{http://www.w3.org/2001/XMLSchema}integer'
+DEBUG:spyne.interface._base:    adding add_doctor.name = <class 'spyne.model.primitive.string.Unicode'>
+DEBUG:spyne.interface._base:    adding class "<class 'spyne.model.primitive.string.Unicode'>" for '{http://www.w3.org/2001/XMLSchema}string'
+DEBUG:spyne.interface._base:    adding add_doctor.specialty = <class 'spyne.model.primitive.string.Unicode'>
+DEBUG:spyne.interface._base:    adding class "<class 'spyne.model.complex.add_doctorResponse'>" for '{telemedicine.soap.doctors}add_doctorResponse'
+DEBUG:spyne.interface._base:    adding add_doctorResponse.add_doctorResult = <class 'spyne.model.primitive.string.Unicode'>
+DEBUG:spyne.interface._base:  enumerating classes for method 'update_doctor'
+DEBUG:spyne.interface._base:    adding class "<class 'spyne.model.complex.update_doctor'>" for '{telemedicine.soap.doctors}update_doctor'
+DEBUG:spyne.interface._base:    adding update_doctor.doctor_id = <class 'spyne.model.primitive.number.Integer'>
+DEBUG:spyne.interface._base:    adding update_doctor.name = <class 'spyne.model.primitive.string.Unicode'>
+DEBUG:spyne.interface._base:    adding update_doctor.specialty = <class 'spyne.model.primitive.string.Unicode'>
+DEBUG:spyne.interface._base:    adding class "<class 'spyne.model.complex.update_doctorResponse'>" for '{telemedicine.soap.doctors}update_doctorResponse'
+DEBUG:spyne.interface._base:    adding update_doctorResponse.update_doctorResult = <class 'spyne.model.primitive.string.Unicode'>
+DEBUG:spyne.interface._base:  enumerating classes for method 'delete_doctor'
+DEBUG:spyne.interface._base:    adding class "<class 'spyne.model.complex.delete_doctor'>" for '{telemedicine.soap.doctors}delete_doctor'
+DEBUG:spyne.interface._base:    adding delete_doctor.doctor_id = <class 'spyne.model.primitive.number.Integer'>
+DEBUG:spyne.interface._base:    adding class "<class 'spyne.model.complex.delete_doctorResponse'>" for '{telemedicine.soap.doctors}delete_doctorResponse'
+DEBUG:spyne.interface._base:    adding delete_doctorResponse.delete_doctorResult = <class 'spyne.model.primitive.string.Unicode'>
+DEBUG:spyne.interface._base:  enumerating classes for method 'list_doctors'
+DEBUG:spyne.interface._base:    adding class "<class 'spyne.model.complex.list_doctors'>" for '{telemedicine.soap.doctors}list_doctors'
+DEBUG:spyne.interface._base:    adding class "<class 'spyne.model.complex.list_doctorsResponse'>" for '{telemedicine.soap.doctors}list_doctorsResponse'
+DEBUG:spyne.interface._base:    adding list_doctorsResponse.list_doctorsResult = <class 'spyne.model.complex.Iterable'>
+DEBUG:spyne.interface._base:    adding class "<class 'spyne.model.complex.Iterable'>" for '{telemedicine.soap.doctors}stringArray'
+DEBUG:spyne.interface._base:    adding stringArray.string = <class 'spyne.model.primitive.string.Unicode'>
+DEBUG:spyne.interface._base:populating 'app.soap.doctors_service.DoctorService' routes...
+DEBUG:spyne.interface._base:  adding method DoctorService.add_doctor to match '{telemedicine.soap.doctors}add_doctor' tag.
+DEBUG:spyne.interface._base:  adding method DoctorService.update_doctor to match '{telemedicine.soap.doctors}update_doctor' tag.
+DEBUG:spyne.interface._base:  adding method DoctorService.delete_doctor to match '{telemedicine.soap.doctors}delete_doctor' tag.
+DEBUG:spyne.interface._base:  adding method DoctorService.list_doctors to match '{telemedicine.soap.doctors}list_doctors' tag.
+DEBUG:spyne.interface._base:From this point on, you're not supposed to make any changes to the class and method structure of the exposed services.
+DEBUG:spyne.interface.xml_schema:generating schema for targetNamespace='telemedicine.soap.doctors', prefix: 'tns' in dir '/var/folders/8t/0rk_0_zs50l49nwss08qx4g40000gn/T/spynedicsdxar'
+DEBUG:spyne.interface.xml_schema:writing '/var/folders/8t/0rk_0_zs50l49nwss08qx4g40000gn/T/spynedicsdxar/tns.xsd' for ns telemedicine.soap.doctors
+DEBUG:spyne.interface.xml_schema:Schema built. Removed '/var/folders/8t/0rk_0_zs50l49nwss08qx4g40000gn/T/spynedicsdxar'
+DEBUG:spyne.util.appreg:Registering <spyne.application.Application object at 0x103658940> as ('telemedicine.soap.doctors', 'Application')
+DEBUG:spyne.model.complex:Got bases for add_prescription from meta: (<class 'spyne.model.complex.ComplexModel'>,)
+DEBUG:spyne.model.complex:Got bases for add_prescriptionResponse from meta: (<class 'spyne.model.complex.ComplexModel'>,)
+DEBUG:spyne.model.complex:Got bases for get_prescription from meta: (<class 'spyne.model.complex.ComplexModel'>,)
+DEBUG:spyne.model.complex:Got bases for get_prescriptionResponse from meta: (<class 'spyne.model.complex.ComplexModel'>,)
+INFO:spyne.application:Initializing application {telemedicine.soap}Application...
+DEBUG:spyne.interface._base:populating app.soap.prescriptions_service.PrescriptionService types...
+DEBUG:spyne.interface._base:  enumerating classes for method 'add_prescription'
+DEBUG:spyne.interface._base:    adding class "<class 'spyne.model.complex.add_prescription'>" for '{telemedicine.soap}add_prescription'
+DEBUG:spyne.interface._base:    adding add_prescription.patient_id = <class 'spyne.model.primitive.number.Integer'>
+DEBUG:spyne.interface._base:    adding class "<class 'spyne.model.primitive.number.Integer'>" for '{http://www.w3.org/2001/XMLSchema}integer'
+DEBUG:spyne.interface._base:    adding add_prescription.doctor_id = <class 'spyne.model.primitive.number.Integer'>
+DEBUG:spyne.interface._base:    adding add_prescription.content = <class 'spyne.model.primitive.string.Unicode'>
+DEBUG:spyne.interface._base:    adding class "<class 'spyne.model.primitive.string.Unicode'>" for '{http://www.w3.org/2001/XMLSchema}string'
+DEBUG:spyne.interface._base:    adding class "<class 'spyne.model.complex.add_prescriptionResponse'>" for '{telemedicine.soap}add_prescriptionResponse'
+DEBUG:spyne.interface._base:    adding add_prescriptionResponse.add_prescriptionResult = <class 'spyne.model.primitive.string.Unicode'>
+DEBUG:spyne.interface._base:  enumerating classes for method 'get_prescription'
+DEBUG:spyne.interface._base:    adding class "<class 'spyne.model.complex.get_prescription'>" for '{telemedicine.soap}get_prescription'
+DEBUG:spyne.interface._base:    adding get_prescription.prescription_id = <class 'spyne.model.primitive.number.Integer'>
+DEBUG:spyne.interface._base:    adding class "<class 'spyne.model.complex.get_prescriptionResponse'>" for '{telemedicine.soap}get_prescriptionResponse'
+DEBUG:spyne.interface._base:    adding get_prescriptionResponse.get_prescriptionResult = <class 'spyne.model.primitive.string.Unicode'>
+DEBUG:spyne.interface._base:populating 'app.soap.prescriptions_service.PrescriptionService' routes...
+DEBUG:spyne.interface._base:  adding method PrescriptionService.add_prescription to match '{telemedicine.soap}add_prescription' tag.
+DEBUG:spyne.interface._base:  adding method PrescriptionService.get_prescription to match '{telemedicine.soap}get_prescription' tag.
+DEBUG:spyne.interface._base:From this point on, you're not supposed to make any changes to the class and method structure of the exposed services.
+DEBUG:spyne.interface.xml_schema:generating schema for targetNamespace='telemedicine.soap', prefix: 'tns' in dir '/var/folders/8t/0rk_0_zs50l49nwss08qx4g40000gn/T/spynednrs3qey'
+DEBUG:spyne.interface.xml_schema:writing '/var/folders/8t/0rk_0_zs50l49nwss08qx4g40000gn/T/spynednrs3qey/tns.xsd' for ns telemedicine.soap
+DEBUG:spyne.interface.xml_schema:Schema built. Removed '/var/folders/8t/0rk_0_zs50l49nwss08qx4g40000gn/T/spynednrs3qey'
+WARNING:spyne.util.appreg:Overwriting application ('telemedicine.soap', 'Application')(<spyne.application.Application object at 0x1063bf400>).
+DEBUG:spyne.util.appreg:Stack trace of the instantiation:
+  File "/Users/amine/Desktop/telemedicine_services/run_soap.py", line 3, in <module>
+    from app.soap.medical_records_service import wsgi_app as medical_records_app
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/amine/Desktop/telemedicine_services/app/soap/__init__.py", line 1, in <module>
+    from .medical_records_service import wsgi_app as medical_records_app
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/amine/Desktop/telemedicine_services/app/soap/medical_records_service.py", line 61, in <module>
+    application = Application(
+  File "/Users/amine/.pyenv/versions/3.10.12/lib/python3.10/site-packages/spyne/application.py", line 151, in __init__
+    register_application(self)
+  File "/Users/amine/.pyenv/versions/3.10.12/lib/python3.10/site-packages/spyne/util/appreg.py", line 56, in register_application
+    stack = traceback.format_stack()
+
+DEBUG:spyne.util.appreg:Registering <spyne.application.Application object at 0x1063bf400> as ('telemedicine.soap', 'Application')
+DEBUG:spyne.model.complex:Got bases for Iterable from orig: (<class 'spyne.model.complex.Array'>,)
+DEBUG:spyne.model._base:	string: setting max_occurs=Decimal('Infinity')
+DEBUG:spyne.model.complex:Got bases for add_doctor from meta: (<class 'spyne.model.complex.ComplexModel'>,)
+DEBUG:spyne.model.complex:Got bases for add_doctorResponse from meta: (<class 'spyne.model.complex.ComplexModel'>,)
+DEBUG:spyne.model.complex:Got bases for update_doctor from meta: (<class 'spyne.model.complex.ComplexModel'>,)
+DEBUG:spyne.model.complex:Got bases for update_doctorResponse from meta: (<class 'spyne.model.complex.ComplexModel'>,)
+DEBUG:spyne.model.complex:Got bases for delete_doctor from meta: (<class 'spyne.model.complex.ComplexModel'>,)
+DEBUG:spyne.model.complex:Got bases for delete_doctorResponse from meta: (<class 'spyne.model.complex.ComplexModel'>,)
+DEBUG:spyne.model.complex:Got bases for list_doctors from meta: (<class 'spyne.model.complex.ComplexModel'>,)
+DEBUG:spyne.model.complex:Got bases for list_doctorsResponse from meta: (<class 'spyne.model.complex.ComplexModel'>,)
+INFO:spyne.application:Initializing application {telemedicine.soap.doctors}Application...
+DEBUG:spyne.interface._base:populating app.soap.doctors_service.DoctorService types...
+DEBUG:spyne.interface._base:  enumerating classes for method 'add_doctor'
+DEBUG:spyne.interface._base:    adding class "<class 'spyne.model.complex.add_doctor'>" for '{telemedicine.soap.doctors}add_doctor'
+DEBUG:spyne.interface._base:    adding add_doctor.doctor_id = <class 'spyne.model.primitive.number.Integer'>
+DEBUG:spyne.interface._base:    adding class "<class 'spyne.model.primitive.number.Integer'>" for '{http://www.w3.org/2001/XMLSchema}integer'
+DEBUG:spyne.interface._base:    adding add_doctor.name = <class 'spyne.model.primitive.string.Unicode'>
+DEBUG:spyne.interface._base:    adding class "<class 'spyne.model.primitive.string.Unicode'>" for '{http://www.w3.org/2001/XMLSchema}string'
+DEBUG:spyne.interface._base:    adding add_doctor.specialty = <class 'spyne.model.primitive.string.Unicode'>
+DEBUG:spyne.interface._base:    adding class "<class 'spyne.model.complex.add_doctorResponse'>" for '{telemedicine.soap.doctors}add_doctorResponse'
+DEBUG:spyne.interface._base:    adding add_doctorResponse.add_doctorResult = <class 'spyne.model.primitive.string.Unicode'>
+DEBUG:spyne.interface._base:  enumerating classes for method 'update_doctor'
+DEBUG:spyne.interface._base:    adding class "<class 'spyne.model.complex.update_doctor'>" for '{telemedicine.soap.doctors}update_doctor'
+DEBUG:spyne.interface._base:    adding update_doctor.doctor_id = <class 'spyne.model.primitive.number.Integer'>
+DEBUG:spyne.interface._base:    adding update_doctor.name = <class 'spyne.model.primitive.string.Unicode'>
+DEBUG:spyne.interface._base:    adding update_doctor.specialty = <class 'spyne.model.primitive.string.Unicode'>
+DEBUG:spyne.interface._base:    adding class "<class 'spyne.model.complex.update_doctorResponse'>" for '{telemedicine.soap.doctors}update_doctorResponse'
+DEBUG:spyne.interface._base:    adding update_doctorResponse.update_doctorResult = <class 'spyne.model.primitive.string.Unicode'>
+DEBUG:spyne.interface._base:  enumerating classes for method 'delete_doctor'
+DEBUG:spyne.interface._base:    adding class "<class 'spyne.model.complex.delete_doctor'>" for '{telemedicine.soap.doctors}delete_doctor'
+DEBUG:spyne.interface._base:    adding delete_doctor.doctor_id = <class 'spyne.model.primitive.number.Integer'>
+DEBUG:spyne.interface._base:    adding class "<class 'spyne.model.complex.delete_doctorResponse'>" for '{telemedicine.soap.doctors}delete_doctorResponse'
+DEBUG:spyne.interface._base:    adding delete_doctorResponse.delete_doctorResult = <class 'spyne.model.primitive.string.Unicode'>
+DEBUG:spyne.interface._base:  enumerating classes for method 'list_doctors'
+DEBUG:spyne.interface._base:    adding class "<class 'spyne.model.complex.list_doctors'>" for '{telemedicine.soap.doctors}list_doctors'
+DEBUG:spyne.interface._base:    adding class "<class 'spyne.model.complex.list_doctorsResponse'>" for '{telemedicine.soap.doctors}list_doctorsResponse'
+DEBUG:spyne.interface._base:    adding list_doctorsResponse.list_doctorsResult = <class 'spyne.model.complex.Iterable'>
+DEBUG:spyne.interface._base:    adding class "<class 'spyne.model.complex.Iterable'>" for '{telemedicine.soap.doctors}stringArray'
+DEBUG:spyne.interface._base:    adding stringArray.string = <class 'spyne.model.primitive.string.Unicode'>
+DEBUG:spyne.interface._base:populating 'app.soap.doctors_service.DoctorService' routes...
+DEBUG:spyne.interface._base:  adding method DoctorService.add_doctor to match '{telemedicine.soap.doctors}add_doctor' tag.
+DEBUG:spyne.interface._base:  adding method DoctorService.update_doctor to match '{telemedicine.soap.doctors}update_doctor' tag.
+DEBUG:spyne.interface._base:  adding method DoctorService.delete_doctor to match '{telemedicine.soap.doctors}delete_doctor' tag.
+DEBUG:spyne.interface._base:  adding method DoctorService.list_doctors to match '{telemedicine.soap.doctors}list_doctors' tag.
+DEBUG:spyne.interface._base:From this point on, you're not supposed to make any changes to the class and method structure of the exposed services.
+DEBUG:spyne.interface.xml_schema:generating schema for targetNamespace='telemedicine.soap.doctors', prefix: 'tns' in dir '/var/folders/8t/0rk_0_zs50l49nwss08qx4g40000gn/T/spynels3w9r7n'
+DEBUG:spyne.interface.xml_schema:writing '/var/folders/8t/0rk_0_zs50l49nwss08qx4g40000gn/T/spynels3w9r7n/tns.xsd' for ns telemedicine.soap.doctors
+DEBUG:spyne.interface.xml_schema:Schema built. Removed '/var/folders/8t/0rk_0_zs50l49nwss08qx4g40000gn/T/spynels3w9r7n'
+DEBUG:spyne.util.appreg:Registering <spyne.application.Application object at 0x106418a30> as ('telemedicine.soap.doctors', 'Application')
+DEBUG:spyne.server.wsgi:Add http header 'accept_encoding' = ['gzip,deflate']
+DEBUG:spyne.server.wsgi:Add http header 'soapaction' = ['"add_doctor"']
+DEBUG:spyne.server.wsgi:Add http header 'host' = ['127.0.0.1:8003']
+DEBUG:spyne.server.wsgi:Add http header 'connection' = ['Keep-Alive']
+DEBUG:spyne.server.wsgi:Add http header 'user_agent' = ['Apache-HttpClient/4.5.5 (Java/16.0.2)']
+DEBUG:spyne.protocol.xml:Validated ? True
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x1063bff10> attrcache size: 0
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x1063bff10> attrcache size: 1
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x1063bff10> attrcache size: 1
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x1063bff10> attrcache size: 2
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x1063bff10> attrcache size: 2
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x1063bff10> attrcache size: 2
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x1063bff10> attrcache size: 2
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x1063bff10> attrcache size: 3
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x1063bff10> attrcache size: 3
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x1063bff10> attrcache size: 3
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x1063bff10> attrcache size: 3
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x1063bff10> attrcache size: 3
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x1063bfdf0> attrcache size: 0
+DEBUG:spyne.protocol._base:PMORPH Skipped: <spyne.protocol.soap.soap11.Soap11 object at 0x1063bfdf0> is NOT polymorphic
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x1063bfdf0> attrcache size: 1
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x1063bfdf0> attrcache size: 1
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x1063bfdf0> attrcache size: 1
+DEBUG:spyne.protocol._base:PMORPH Skipped: <spyne.protocol.soap.soap11.Soap11 object at 0x1063bfdf0> is NOT polymorphic
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x1063bfdf0> attrcache size: 2
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x1063bfdf0> attrcache size: 2
+DEBUG:spyne:gc.collect() took around 30ms.
+DEBUG:spyne.server.wsgi:Add http header 'accept_encoding' = ['gzip,deflate']
+DEBUG:spyne.server.wsgi:Add http header 'soapaction' = ['"add_doctor"']
+DEBUG:spyne.server.wsgi:Add http header 'host' = ['127.0.0.1:8003']
+DEBUG:spyne.server.wsgi:Add http header 'connection' = ['Keep-Alive']
+DEBUG:spyne.server.wsgi:Add http header 'user_agent' = ['Apache-HttpClient/4.5.5 (Java/16.0.2)']
+DEBUG:spyne.protocol.xml:Validated ? True
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x1063bff10> attrcache size: 3
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x1063bff10> attrcache size: 3
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x1063bff10> attrcache size: 3
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x1063bff10> attrcache size: 3
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x1063bff10> attrcache size: 3
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x1063bff10> attrcache size: 3
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x1063bff10> attrcache size: 3
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x1063bff10> attrcache size: 3
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x1063bff10> attrcache size: 3
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x1063bff10> attrcache size: 3
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x1063bff10> attrcache size: 3
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x1063bff10> attrcache size: 3
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x1063bfdf0> attrcache size: 2
+DEBUG:spyne.protocol._base:PMORPH Skipped: <spyne.protocol.soap.soap11.Soap11 object at 0x1063bfdf0> is NOT polymorphic
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x1063bfdf0> attrcache size: 2
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x1063bfdf0> attrcache size: 2
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x1063bfdf0> attrcache size: 2
+DEBUG:spyne.protocol._base:PMORPH Skipped: <spyne.protocol.soap.soap11.Soap11 object at 0x1063bfdf0> is NOT polymorphic
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x1063bfdf0> attrcache size: 2
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x1063bfdf0> attrcache size: 2
+DEBUG:spyne:gc.collect() took around 30ms.
+DEBUG:spyne.model.complex:Got bases for add_prescription from meta: (<class 'spyne.model.complex.ComplexModel'>,)
+DEBUG:spyne.model.complex:Got bases for add_prescriptionResponse from meta: (<class 'spyne.model.complex.ComplexModel'>,)
+DEBUG:spyne.model.complex:Got bases for get_prescription from meta: (<class 'spyne.model.complex.ComplexModel'>,)
+DEBUG:spyne.model.complex:Got bases for get_prescriptionResponse from meta: (<class 'spyne.model.complex.ComplexModel'>,)
+INFO:spyne.application:Initializing application {telemedicine.soap}Application...
+DEBUG:spyne.interface._base:populating app.soap.prescriptions_service.PrescriptionService types...
+DEBUG:spyne.interface._base:  enumerating classes for method 'add_prescription'
+DEBUG:spyne.interface._base:    adding class "<class 'spyne.model.complex.add_prescription'>" for '{telemedicine.soap}add_prescription'
+DEBUG:spyne.interface._base:    adding add_prescription.patient_id = <class 'spyne.model.primitive.number.Integer'>
+DEBUG:spyne.interface._base:    adding class "<class 'spyne.model.primitive.number.Integer'>" for '{http://www.w3.org/2001/XMLSchema}integer'
+DEBUG:spyne.interface._base:    adding add_prescription.doctor_id = <class 'spyne.model.primitive.number.Integer'>
+DEBUG:spyne.interface._base:    adding add_prescription.content = <class 'spyne.model.primitive.string.Unicode'>
+DEBUG:spyne.interface._base:    adding class "<class 'spyne.model.primitive.string.Unicode'>" for '{http://www.w3.org/2001/XMLSchema}string'
+DEBUG:spyne.interface._base:    adding class "<class 'spyne.model.complex.add_prescriptionResponse'>" for '{telemedicine.soap}add_prescriptionResponse'
+DEBUG:spyne.interface._base:    adding add_prescriptionResponse.add_prescriptionResult = <class 'spyne.model.primitive.string.Unicode'>
+DEBUG:spyne.interface._base:  enumerating classes for method 'get_prescription'
+DEBUG:spyne.interface._base:    adding class "<class 'spyne.model.complex.get_prescription'>" for '{telemedicine.soap}get_prescription'
+DEBUG:spyne.interface._base:    adding get_prescription.prescription_id = <class 'spyne.model.primitive.number.Integer'>
+DEBUG:spyne.interface._base:    adding class "<class 'spyne.model.complex.get_prescriptionResponse'>" for '{telemedicine.soap}get_prescriptionResponse'
+DEBUG:spyne.interface._base:    adding get_prescriptionResponse.get_prescriptionResult = <class 'spyne.model.primitive.string.Unicode'>
+DEBUG:spyne.interface._base:populating 'app.soap.prescriptions_service.PrescriptionService' routes...
+DEBUG:spyne.interface._base:  adding method PrescriptionService.add_prescription to match '{telemedicine.soap}add_prescription' tag.
+DEBUG:spyne.interface._base:  adding method PrescriptionService.get_prescription to match '{telemedicine.soap}get_prescription' tag.
+DEBUG:spyne.interface._base:From this point on, you're not supposed to make any changes to the class and method structure of the exposed services.
+DEBUG:spyne.interface.xml_schema:generating schema for targetNamespace='telemedicine.soap', prefix: 'tns' in dir '/var/folders/8t/0rk_0_zs50l49nwss08qx4g40000gn/T/spyne9a7i_cas'
+DEBUG:spyne.interface.xml_schema:writing '/var/folders/8t/0rk_0_zs50l49nwss08qx4g40000gn/T/spyne9a7i_cas/tns.xsd' for ns telemedicine.soap
+DEBUG:spyne.interface.xml_schema:Schema built. Removed '/var/folders/8t/0rk_0_zs50l49nwss08qx4g40000gn/T/spyne9a7i_cas'
+DEBUG:spyne.util.appreg:Registering <spyne.application.Application object at 0x10473a290> as ('telemedicine.soap', 'Application')
+DEBUG:spyne.model.complex:Got bases for Iterable from orig: (<class 'spyne.model.complex.Array'>,)
+DEBUG:spyne.model.complex:Got bases for add_prescription from meta: (<class 'spyne.model.complex.ComplexModel'>,)
+DEBUG:spyne.model.complex:Got bases for add_prescriptionResponse from meta: (<class 'spyne.model.complex.ComplexModel'>,)
+DEBUG:spyne.model.complex:Got bases for get_prescription from meta: (<class 'spyne.model.complex.ComplexModel'>,)
+DEBUG:spyne.model.complex:Got bases for get_prescriptionResponse from meta: (<class 'spyne.model.complex.ComplexModel'>,)
+INFO:spyne.application:Initializing application {telemedicine.soap}Application...
+DEBUG:spyne.interface._base:populating app.soap.prescriptions_service.PrescriptionService types...
+DEBUG:spyne.interface._base:  enumerating classes for method 'add_prescription'
+DEBUG:spyne.interface._base:    adding class "<class 'spyne.model.complex.add_prescription'>" for '{telemedicine.soap}add_prescription'
+DEBUG:spyne.interface._base:    adding add_prescription.patient_id = <class 'spyne.model.primitive.number.Integer'>
+DEBUG:spyne.interface._base:    adding class "<class 'spyne.model.primitive.number.Integer'>" for '{http://www.w3.org/2001/XMLSchema}integer'
+DEBUG:spyne.interface._base:    adding add_prescription.doctor_id = <class 'spyne.model.primitive.number.Integer'>
+DEBUG:spyne.interface._base:    adding add_prescription.content = <class 'spyne.model.primitive.string.Unicode'>
+DEBUG:spyne.interface._base:    adding class "<class 'spyne.model.primitive.string.Unicode'>" for '{http://www.w3.org/2001/XMLSchema}string'
+DEBUG:spyne.interface._base:    adding class "<class 'spyne.model.complex.add_prescriptionResponse'>" for '{telemedicine.soap}add_prescriptionResponse'
+DEBUG:spyne.interface._base:    adding add_prescriptionResponse.add_prescriptionResult = <class 'spyne.model.primitive.string.Unicode'>
+DEBUG:spyne.interface._base:  enumerating classes for method 'get_prescription'
+DEBUG:spyne.interface._base:    adding class "<class 'spyne.model.complex.get_prescription'>" for '{telemedicine.soap}get_prescription'
+DEBUG:spyne.interface._base:    adding get_prescription.prescription_id = <class 'spyne.model.primitive.number.Integer'>
+DEBUG:spyne.interface._base:    adding class "<class 'spyne.model.complex.get_prescriptionResponse'>" for '{telemedicine.soap}get_prescriptionResponse'
+DEBUG:spyne.interface._base:    adding get_prescriptionResponse.get_prescriptionResult = <class 'spyne.model.primitive.string.Unicode'>
+DEBUG:spyne.interface._base:populating 'app.soap.prescriptions_service.PrescriptionService' routes...
+DEBUG:spyne.interface._base:  adding method PrescriptionService.add_prescription to match '{telemedicine.soap}add_prescription' tag.
+DEBUG:spyne.interface._base:  adding method PrescriptionService.get_prescription to match '{telemedicine.soap}get_prescription' tag.
+DEBUG:spyne.interface._base:From this point on, you're not supposed to make any changes to the class and method structure of the exposed services.
+DEBUG:spyne.interface.xml_schema:generating schema for targetNamespace='telemedicine.soap', prefix: 'tns' in dir '/var/folders/8t/0rk_0_zs50l49nwss08qx4g40000gn/T/spynefqupgm0z'
+DEBUG:spyne.interface.xml_schema:writing '/var/folders/8t/0rk_0_zs50l49nwss08qx4g40000gn/T/spynefqupgm0z/tns.xsd' for ns telemedicine.soap
+DEBUG:spyne.interface.xml_schema:Schema built. Removed '/var/folders/8t/0rk_0_zs50l49nwss08qx4g40000gn/T/spynefqupgm0z'
+DEBUG:spyne.util.appreg:Registering <spyne.application.Application object at 0x104ad0a30> as ('telemedicine.soap', 'Application')
+DEBUG:spyne.model.complex:Got bases for Iterable from orig: (<class 'spyne.model.complex.Array'>,)
+DEBUG:spyne.model.complex:Got bases for add_prescription from meta: (<class 'spyne.model.complex.ComplexModel'>,)
+DEBUG:spyne.model.complex:Got bases for add_prescriptionResponse from meta: (<class 'spyne.model.complex.ComplexModel'>,)
+DEBUG:spyne.model.complex:Got bases for get_prescription from meta: (<class 'spyne.model.complex.ComplexModel'>,)
+DEBUG:spyne.model.complex:Got bases for get_prescriptionResponse from meta: (<class 'spyne.model.complex.ComplexModel'>,)
+INFO:spyne.application:Initializing application {telemedicine.soap}Application...
+DEBUG:spyne.interface._base:populating app.soap.prescriptions_service.PrescriptionService types...
+DEBUG:spyne.interface._base:  enumerating classes for method 'add_prescription'
+DEBUG:spyne.interface._base:    adding class "<class 'spyne.model.complex.add_prescription'>" for '{telemedicine.soap}add_prescription'
+DEBUG:spyne.interface._base:    adding add_prescription.patient_id = <class 'spyne.model.primitive.number.Integer'>
+DEBUG:spyne.interface._base:    adding class "<class 'spyne.model.primitive.number.Integer'>" for '{http://www.w3.org/2001/XMLSchema}integer'
+DEBUG:spyne.interface._base:    adding add_prescription.doctor_id = <class 'spyne.model.primitive.number.Integer'>
+DEBUG:spyne.interface._base:    adding add_prescription.content = <class 'spyne.model.primitive.string.Unicode'>
+DEBUG:spyne.interface._base:    adding class "<class 'spyne.model.primitive.string.Unicode'>" for '{http://www.w3.org/2001/XMLSchema}string'
+DEBUG:spyne.interface._base:    adding class "<class 'spyne.model.complex.add_prescriptionResponse'>" for '{telemedicine.soap}add_prescriptionResponse'
+DEBUG:spyne.interface._base:    adding add_prescriptionResponse.add_prescriptionResult = <class 'spyne.model.primitive.string.Unicode'>
+DEBUG:spyne.interface._base:  enumerating classes for method 'get_prescription'
+DEBUG:spyne.interface._base:    adding class "<class 'spyne.model.complex.get_prescription'>" for '{telemedicine.soap}get_prescription'
+DEBUG:spyne.interface._base:    adding get_prescription.prescription_id = <class 'spyne.model.primitive.number.Integer'>
+DEBUG:spyne.interface._base:    adding class "<class 'spyne.model.complex.get_prescriptionResponse'>" for '{telemedicine.soap}get_prescriptionResponse'
+DEBUG:spyne.interface._base:    adding get_prescriptionResponse.get_prescriptionResult = <class 'spyne.model.primitive.string.Unicode'>
+DEBUG:spyne.interface._base:populating 'app.soap.prescriptions_service.PrescriptionService' routes...
+DEBUG:spyne.interface._base:  adding method PrescriptionService.add_prescription to match '{telemedicine.soap}add_prescription' tag.
+DEBUG:spyne.interface._base:  adding method PrescriptionService.get_prescription to match '{telemedicine.soap}get_prescription' tag.
+DEBUG:spyne.interface._base:From this point on, you're not supposed to make any changes to the class and method structure of the exposed services.
+DEBUG:spyne.interface.xml_schema:generating schema for targetNamespace='telemedicine.soap', prefix: 'tns' in dir '/var/folders/8t/0rk_0_zs50l49nwss08qx4g40000gn/T/spyneu_hzc1ni'
+DEBUG:spyne.interface.xml_schema:writing '/var/folders/8t/0rk_0_zs50l49nwss08qx4g40000gn/T/spyneu_hzc1ni/tns.xsd' for ns telemedicine.soap
+DEBUG:spyne.interface.xml_schema:Schema built. Removed '/var/folders/8t/0rk_0_zs50l49nwss08qx4g40000gn/T/spyneu_hzc1ni'
+DEBUG:spyne.util.appreg:Registering <spyne.application.Application object at 0x104f62b90> as ('telemedicine.soap', 'Application')
+DEBUG:spyne.model.complex:Got bases for Iterable from orig: (<class 'spyne.model.complex.Array'>,)
+DEBUG:spyne.model.complex:Got bases for add_prescription from meta: (<class 'spyne.model.complex.ComplexModel'>,)
+DEBUG:spyne.model.complex:Got bases for add_prescriptionResponse from meta: (<class 'spyne.model.complex.ComplexModel'>,)
+DEBUG:spyne.model.complex:Got bases for get_prescription from meta: (<class 'spyne.model.complex.ComplexModel'>,)
+DEBUG:spyne.model.complex:Got bases for get_prescriptionResponse from meta: (<class 'spyne.model.complex.ComplexModel'>,)
+INFO:spyne.application:Initializing application {telemedicine.soap}Application...
+DEBUG:spyne.interface._base:populating app.soap.prescriptions_service.PrescriptionService types...
+DEBUG:spyne.interface._base:  enumerating classes for method 'add_prescription'
+DEBUG:spyne.interface._base:    adding class "<class 'spyne.model.complex.add_prescription'>" for '{telemedicine.soap}add_prescription'
+DEBUG:spyne.interface._base:    adding add_prescription.patient_id = <class 'spyne.model.primitive.number.Integer'>
+DEBUG:spyne.interface._base:    adding class "<class 'spyne.model.primitive.number.Integer'>" for '{http://www.w3.org/2001/XMLSchema}integer'
+DEBUG:spyne.interface._base:    adding add_prescription.doctor_id = <class 'spyne.model.primitive.number.Integer'>
+DEBUG:spyne.interface._base:    adding add_prescription.content = <class 'spyne.model.primitive.string.Unicode'>
+DEBUG:spyne.interface._base:    adding class "<class 'spyne.model.primitive.string.Unicode'>" for '{http://www.w3.org/2001/XMLSchema}string'
+DEBUG:spyne.interface._base:    adding class "<class 'spyne.model.complex.add_prescriptionResponse'>" for '{telemedicine.soap}add_prescriptionResponse'
+DEBUG:spyne.interface._base:    adding add_prescriptionResponse.add_prescriptionResult = <class 'spyne.model.primitive.string.Unicode'>
+DEBUG:spyne.interface._base:  enumerating classes for method 'get_prescription'
+DEBUG:spyne.interface._base:    adding class "<class 'spyne.model.complex.get_prescription'>" for '{telemedicine.soap}get_prescription'
+DEBUG:spyne.interface._base:    adding get_prescription.prescription_id = <class 'spyne.model.primitive.number.Integer'>
+DEBUG:spyne.interface._base:    adding class "<class 'spyne.model.complex.get_prescriptionResponse'>" for '{telemedicine.soap}get_prescriptionResponse'
+DEBUG:spyne.interface._base:    adding get_prescriptionResponse.get_prescriptionResult = <class 'spyne.model.primitive.string.Unicode'>
+DEBUG:spyne.interface._base:populating 'app.soap.prescriptions_service.PrescriptionService' routes...
+DEBUG:spyne.interface._base:  adding method PrescriptionService.add_prescription to match '{telemedicine.soap}add_prescription' tag.
+DEBUG:spyne.interface._base:  adding method PrescriptionService.get_prescription to match '{telemedicine.soap}get_prescription' tag.
+DEBUG:spyne.interface._base:From this point on, you're not supposed to make any changes to the class and method structure of the exposed services.
+DEBUG:spyne.interface.xml_schema:generating schema for targetNamespace='telemedicine.soap', prefix: 'tns' in dir '/var/folders/8t/0rk_0_zs50l49nwss08qx4g40000gn/T/spynec853h7iy'
+DEBUG:spyne.interface.xml_schema:writing '/var/folders/8t/0rk_0_zs50l49nwss08qx4g40000gn/T/spynec853h7iy/tns.xsd' for ns telemedicine.soap
+DEBUG:spyne.interface.xml_schema:Schema built. Removed '/var/folders/8t/0rk_0_zs50l49nwss08qx4g40000gn/T/spynec853h7iy'
+DEBUG:spyne.util.appreg:Registering <spyne.application.Application object at 0x102802b90> as ('telemedicine.soap', 'Application')
+DEBUG:spyne.model.complex:Got bases for DoctorSoap from meta: (<class 'spyne.model.complex.ComplexModel'>,)
+DEBUG:spyne.model.complex:Got bases for Iterable from orig: (<class 'spyne.model.complex.Array'>,)
+DEBUG:spyne.model._base:	DoctorSoap: setting max_occurs=Decimal('Infinity')
+DEBUG:spyne.model.complex:Got bases for DoctorSoap from orig: (<class 'spyne.model.complex.ComplexModel'>,)
+DEBUG:spyne.model.complex:Got bases for add_doctor from meta: (<class 'spyne.model.complex.ComplexModel'>,)
+DEBUG:spyne.model.complex:Got bases for add_doctorResponse from meta: (<class 'spyne.model.complex.ComplexModel'>,)
+DEBUG:spyne.model.complex:Got bases for update_doctor from meta: (<class 'spyne.model.complex.ComplexModel'>,)
+DEBUG:spyne.model.complex:Got bases for update_doctorResponse from meta: (<class 'spyne.model.complex.ComplexModel'>,)
+DEBUG:spyne.model.complex:Got bases for delete_doctor from meta: (<class 'spyne.model.complex.ComplexModel'>,)
+DEBUG:spyne.model.complex:Got bases for delete_doctorResponse from meta: (<class 'spyne.model.complex.ComplexModel'>,)
+DEBUG:spyne.model.complex:Got bases for list_doctors from meta: (<class 'spyne.model.complex.ComplexModel'>,)
+DEBUG:spyne.model.complex:Got bases for list_doctorsResponse from meta: (<class 'spyne.model.complex.ComplexModel'>,)
+INFO:spyne.application:Initializing application {telemedicine.soap}Application...
+DEBUG:spyne.interface._base:populating app.soap.doctors_service.DoctorService types...
+DEBUG:spyne.interface._base:  enumerating classes for method 'add_doctor'
+DEBUG:spyne.interface._base:    adding class "<class 'spyne.model.complex.add_doctor'>" for '{telemedicine.soap}add_doctor'
+DEBUG:spyne.interface._base:    adding add_doctor.doctor_id = <class 'spyne.model.primitive.number.Integer'>
+DEBUG:spyne.interface._base:    adding class "<class 'spyne.model.primitive.number.Integer'>" for '{http://www.w3.org/2001/XMLSchema}integer'
+DEBUG:spyne.interface._base:    adding add_doctor.name = <class 'spyne.model.primitive.string.Unicode'>
+DEBUG:spyne.interface._base:    adding class "<class 'spyne.model.primitive.string.Unicode'>" for '{http://www.w3.org/2001/XMLSchema}string'
+DEBUG:spyne.interface._base:    adding add_doctor.specialty = <class 'spyne.model.primitive.string.Unicode'>
+DEBUG:spyne.interface._base:    adding class "<class 'spyne.model.complex.add_doctorResponse'>" for '{telemedicine.soap}add_doctorResponse'
+DEBUG:spyne.interface._base:    adding add_doctorResponse.add_doctorResult = <class 'spyne.model.primitive.string.Unicode'>
+DEBUG:spyne.interface._base:  enumerating classes for method 'update_doctor'
+DEBUG:spyne.interface._base:    adding class "<class 'spyne.model.complex.update_doctor'>" for '{telemedicine.soap}update_doctor'
+DEBUG:spyne.interface._base:    adding update_doctor.doctor_id = <class 'spyne.model.primitive.number.Integer'>
+DEBUG:spyne.interface._base:    adding update_doctor.name = <class 'spyne.model.primitive.string.Unicode'>
+DEBUG:spyne.interface._base:    adding update_doctor.specialty = <class 'spyne.model.primitive.string.Unicode'>
+DEBUG:spyne.interface._base:    adding class "<class 'spyne.model.complex.update_doctorResponse'>" for '{telemedicine.soap}update_doctorResponse'
+DEBUG:spyne.interface._base:    adding update_doctorResponse.update_doctorResult = <class 'spyne.model.primitive.string.Unicode'>
+DEBUG:spyne.interface._base:  enumerating classes for method 'delete_doctor'
+DEBUG:spyne.interface._base:    adding class "<class 'spyne.model.complex.delete_doctor'>" for '{telemedicine.soap}delete_doctor'
+DEBUG:spyne.interface._base:    adding delete_doctor.doctor_id = <class 'spyne.model.primitive.number.Integer'>
+DEBUG:spyne.interface._base:    adding class "<class 'spyne.model.complex.delete_doctorResponse'>" for '{telemedicine.soap}delete_doctorResponse'
+DEBUG:spyne.interface._base:    adding delete_doctorResponse.delete_doctorResult = <class 'spyne.model.primitive.string.Unicode'>
+DEBUG:spyne.interface._base:  enumerating classes for method 'list_doctors'
+DEBUG:spyne.interface._base:    adding class "<class 'spyne.model.complex.list_doctors'>" for '{telemedicine.soap}list_doctors'
+DEBUG:spyne.interface._base:    adding class "<class 'spyne.model.complex.list_doctorsResponse'>" for '{telemedicine.soap}list_doctorsResponse'
+DEBUG:spyne.interface._base:    adding list_doctorsResponse.list_doctorsResult = <class 'spyne.model.complex.Iterable'>
+DEBUG:spyne.interface._base:    adding class "<class 'spyne.model.complex.Iterable'>" for '{app.soap.doctors_service}DoctorSoapArray'
+DEBUG:spyne.interface._base:    adding DoctorSoapArray.DoctorSoap = <class 'app.soap.doctors_service.DoctorSoap'>
+DEBUG:spyne.interface._base:    adding class "<class 'app.soap.doctors_service.DoctorSoap'>" for '{app.soap.doctors_service}DoctorSoap'
+DEBUG:spyne.interface._base:    adding DoctorSoap.id = <class 'spyne.model.primitive.number.Integer'>
+DEBUG:spyne.interface._base:    adding DoctorSoap.name = <class 'spyne.model.primitive.string.Unicode'>
+DEBUG:spyne.interface._base:    adding DoctorSoap.specialty = <class 'spyne.model.primitive.string.Unicode'>
+DEBUG:spyne.interface._base:    importing 'app.soap.doctors_service' to 'telemedicine.soap' for list_doctorsResponse.list_doctorsResult(<class 'spyne.model.complex.Iterable'>)
+DEBUG:spyne.interface._base:populating 'app.soap.doctors_service.DoctorService' routes...
+DEBUG:spyne.interface._base:  adding method DoctorService.add_doctor to match '{telemedicine.soap}add_doctor' tag.
+DEBUG:spyne.interface._base:  adding method DoctorService.update_doctor to match '{telemedicine.soap}update_doctor' tag.
+DEBUG:spyne.interface._base:  adding method DoctorService.delete_doctor to match '{telemedicine.soap}delete_doctor' tag.
+DEBUG:spyne.interface._base:  adding method DoctorService.list_doctors to match '{telemedicine.soap}list_doctors' tag.
+DEBUG:spyne.interface._base:From this point on, you're not supposed to make any changes to the class and method structure of the exposed services.
+DEBUG:spyne.interface.xml_schema:generating schema for targetNamespace='telemedicine.soap', prefix: 'tns' in dir '/var/folders/8t/0rk_0_zs50l49nwss08qx4g40000gn/T/spynetqvblaah'
+DEBUG:spyne.interface.xml_schema:writing '/var/folders/8t/0rk_0_zs50l49nwss08qx4g40000gn/T/spynetqvblaah/tns.xsd' for ns telemedicine.soap
+DEBUG:spyne.interface.xml_schema:writing '/var/folders/8t/0rk_0_zs50l49nwss08qx4g40000gn/T/spynetqvblaah/s0.xsd' for ns app.soap.doctors_service
+DEBUG:spyne.interface.xml_schema:Schema built. Removed '/var/folders/8t/0rk_0_zs50l49nwss08qx4g40000gn/T/spynetqvblaah'
+WARNING:spyne.util.appreg:Overwriting application ('telemedicine.soap', 'Application')(<spyne.application.Application object at 0x10285fa30>).
+DEBUG:spyne.util.appreg:Stack trace of the instantiation:
+  File "/Users/amine/Desktop/telemedicine_services/run_soap.py", line 15, in <module>
+    from app.soap.medical_records_service import wsgi_app as medical_records_app
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/amine/Desktop/telemedicine_services/app/soap/__init__.py", line 2, in <module>
+    from .prescriptions_service import wsgi_app as prescriptions_app
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/amine/Desktop/telemedicine_services/app/soap/prescriptions_service.py", line 44, in <module>
+    application = Application(
+  File "/Users/amine/.pyenv/versions/3.10.12/lib/python3.10/site-packages/spyne/application.py", line 151, in __init__
+    register_application(self)
+  File "/Users/amine/.pyenv/versions/3.10.12/lib/python3.10/site-packages/spyne/util/appreg.py", line 56, in register_application
+    stack = traceback.format_stack()
+
+DEBUG:spyne.util.appreg:Registering <spyne.application.Application object at 0x10285fa30> as ('telemedicine.soap', 'Application')
+DEBUG:spyne.server.wsgi:Add http header 'accept_encoding' = ['gzip,deflate']
+DEBUG:spyne.server.wsgi:Add http header 'soapaction' = ['"add_doctor"']
+DEBUG:spyne.server.wsgi:Add http header 'host' = ['127.0.0.1:8003']
+DEBUG:spyne.server.wsgi:Add http header 'connection' = ['Keep-Alive']
+DEBUG:spyne.server.wsgi:Add http header 'user_agent' = ['Apache-HttpClient/4.5.5 (Java/16.0.2)']
+DEBUG:spyne.protocol.xml:Validated ? False
+DEBUG:spyne.protocol._base:PMORPH Skipped: <spyne.protocol.soap.soap11.Soap11 object at 0x10285ed70> is NOT polymorphic
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x10285ed70> attrcache size: 0
+DEBUG:spyne:gc.collect() took around 20ms.
+DEBUG:spyne.server.wsgi:Add http header 'accept_encoding' = ['gzip,deflate']
+DEBUG:spyne.server.wsgi:Add http header 'soapaction' = ['"add_doctor"']
+DEBUG:spyne.server.wsgi:Add http header 'host' = ['127.0.0.1:8003']
+DEBUG:spyne.server.wsgi:Add http header 'connection' = ['Keep-Alive']
+DEBUG:spyne.server.wsgi:Add http header 'user_agent' = ['Apache-HttpClient/4.5.5 (Java/16.0.2)']
+DEBUG:spyne.protocol.xml:Validated ? False
+DEBUG:spyne.protocol._base:PMORPH Skipped: <spyne.protocol.soap.soap11.Soap11 object at 0x10285ed70> is NOT polymorphic
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x10285ed70> attrcache size: 1
+DEBUG:spyne:gc.collect() took around 20ms.
+DEBUG:spyne.server.wsgi:Add http header 'accept_encoding' = ['gzip,deflate']
+DEBUG:spyne.server.wsgi:Add http header 'soapaction' = ['"add_medical_record"']
+DEBUG:spyne.server.wsgi:Add http header 'host' = ['127.0.0.1:8001']
+DEBUG:spyne.server.wsgi:Add http header 'connection' = ['Keep-Alive']
+DEBUG:spyne.server.wsgi:Add http header 'user_agent' = ['Apache-HttpClient/4.5.5 (Java/16.0.2)']
+DEBUG:spyne.protocol._base:PMORPH Skipped: <spyne.protocol.soap.soap11.Soap11 object at 0x102802380> is NOT polymorphic
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x102802380> attrcache size: 0
+DEBUG:spyne:gc.collect() took around 30ms.
+DEBUG:spyne.server.wsgi:Add http header 'accept_encoding' = ['gzip,deflate']
+DEBUG:spyne.server.wsgi:Add http header 'soapaction' = ['"add_doctor"']
+DEBUG:spyne.server.wsgi:Add http header 'host' = ['127.0.0.1:8003']
+DEBUG:spyne.server.wsgi:Add http header 'connection' = ['Keep-Alive']
+DEBUG:spyne.server.wsgi:Add http header 'user_agent' = ['Apache-HttpClient/4.5.5 (Java/16.0.2)']
+DEBUG:spyne.protocol.xml:Validated ? False
+DEBUG:spyne.protocol._base:PMORPH Skipped: <spyne.protocol.soap.soap11.Soap11 object at 0x10285ed70> is NOT polymorphic
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x10285ed70> attrcache size: 1
+DEBUG:spyne:gc.collect() took around 20ms.
+DEBUG:spyne.server.wsgi:Add http header 'accept_encoding' = ['gzip,deflate']
+DEBUG:spyne.server.wsgi:Add http header 'soapaction' = ['"add_doctor"']
+DEBUG:spyne.server.wsgi:Add http header 'host' = ['127.0.0.1:8003']
+DEBUG:spyne.server.wsgi:Add http header 'connection' = ['Keep-Alive']
+DEBUG:spyne.server.wsgi:Add http header 'user_agent' = ['Apache-HttpClient/4.5.5 (Java/16.0.2)']
+DEBUG:spyne.protocol.xml:Validated ? False
+DEBUG:spyne.protocol._base:PMORPH Skipped: <spyne.protocol.soap.soap11.Soap11 object at 0x10285ed70> is NOT polymorphic
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x10285ed70> attrcache size: 1
+DEBUG:spyne:gc.collect() took around 30ms.
+DEBUG:spyne.server.wsgi:Add http header 'accept_encoding' = ['gzip,deflate']
+DEBUG:spyne.server.wsgi:Add http header 'soapaction' = ['"add_doctor"']
+DEBUG:spyne.server.wsgi:Add http header 'host' = ['127.0.0.1:8003']
+DEBUG:spyne.server.wsgi:Add http header 'connection' = ['Keep-Alive']
+DEBUG:spyne.server.wsgi:Add http header 'user_agent' = ['Apache-HttpClient/4.5.5 (Java/16.0.2)']
+DEBUG:spyne.protocol.xml:Validated ? False
+DEBUG:spyne.protocol._base:PMORPH Skipped: <spyne.protocol.soap.soap11.Soap11 object at 0x10285ed70> is NOT polymorphic
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x10285ed70> attrcache size: 1
+DEBUG:spyne:gc.collect() took around 30ms.
+DEBUG:spyne.server.wsgi:Add http header 'accept_encoding' = ['gzip,deflate']
+DEBUG:spyne.server.wsgi:Add http header 'soapaction' = ['"add_doctor"']
+DEBUG:spyne.server.wsgi:Add http header 'host' = ['127.0.0.1:8003']
+DEBUG:spyne.server.wsgi:Add http header 'connection' = ['Keep-Alive']
+DEBUG:spyne.server.wsgi:Add http header 'user_agent' = ['Apache-HttpClient/4.5.5 (Java/16.0.2)']
+DEBUG:spyne.protocol.xml:Validated ? False
+DEBUG:spyne.protocol._base:PMORPH Skipped: <spyne.protocol.soap.soap11.Soap11 object at 0x10285ed70> is NOT polymorphic
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x10285ed70> attrcache size: 1
+DEBUG:spyne.server.wsgi:Add http header 'accept_encoding' = ['gzip,deflate']
+DEBUG:spyne.server.wsgi:Add http header 'soapaction' = ['"add_doctor"']
+DEBUG:spyne.server.wsgi:Add http header 'host' = ['127.0.0.1:8003']
+DEBUG:spyne.server.wsgi:Add http header 'connection' = ['Keep-Alive']
+DEBUG:spyne.server.wsgi:Add http header 'user_agent' = ['Apache-HttpClient/4.5.5 (Java/16.0.2)']
+DEBUG:spyne.protocol.xml:Validated ? False
+DEBUG:spyne.protocol._base:PMORPH Skipped: <spyne.protocol.soap.soap11.Soap11 object at 0x10285ed70> is NOT polymorphic
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x10285ed70> attrcache size: 1
+DEBUG:spyne.server.wsgi:Add http header 'accept_encoding' = ['gzip,deflate']
+DEBUG:spyne.server.wsgi:Add http header 'soapaction' = ['"add_prescription"']
+DEBUG:spyne.server.wsgi:Add http header 'host' = ['127.0.0.1:8002']
+DEBUG:spyne.server.wsgi:Add http header 'connection' = ['Keep-Alive']
+DEBUG:spyne.server.wsgi:Add http header 'user_agent' = ['Apache-HttpClient/4.5.5 (Java/16.0.2)']
+DEBUG:spyne.protocol.xml:Validated ? True
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x102802560> attrcache size: 0
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x102802560> attrcache size: 1
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x102802560> attrcache size: 1
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x102802560> attrcache size: 2
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x102802560> attrcache size: 2
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x102802560> attrcache size: 2
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x102802560> attrcache size: 2
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x102802560> attrcache size: 2
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x102802560> attrcache size: 2
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x102802560> attrcache size: 2
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x102802560> attrcache size: 2
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x102802560> attrcache size: 3
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x102802560> attrcache size: 3
+ERROR:root:Error adding prescription: Could not determine join condition between parent/child tables on relationship Patient.medical_records - there are no foreign keys linking these tables.  Ensure that referencing columns are associated with a ForeignKey or ForeignKeyConstraint, or specify a 'primaryjoin' expression.
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x1028029b0> attrcache size: 0
+DEBUG:spyne.protocol._base:PMORPH Skipped: <spyne.protocol.soap.soap11.Soap11 object at 0x1028029b0> is NOT polymorphic
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x1028029b0> attrcache size: 1
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x1028029b0> attrcache size: 1
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x1028029b0> attrcache size: 1
+DEBUG:spyne.protocol._base:PMORPH Skipped: <spyne.protocol.soap.soap11.Soap11 object at 0x1028029b0> is NOT polymorphic
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x1028029b0> attrcache size: 2
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x1028029b0> attrcache size: 2
+DEBUG:spyne:gc.collect() took around 20ms.
+DEBUG:spyne.server.wsgi:Add http header 'accept_encoding' = ['gzip,deflate']
+DEBUG:spyne.server.wsgi:Add http header 'soapaction' = ['"get_prescription"']
+DEBUG:spyne.server.wsgi:Add http header 'host' = ['127.0.0.1:8002']
+DEBUG:spyne.server.wsgi:Add http header 'connection' = ['Keep-Alive']
+DEBUG:spyne.server.wsgi:Add http header 'user_agent' = ['Apache-HttpClient/4.5.5 (Java/16.0.2)']
+DEBUG:spyne.protocol.xml:Validated ? False
+DEBUG:spyne.protocol._base:PMORPH Skipped: <spyne.protocol.soap.soap11.Soap11 object at 0x1028029b0> is NOT polymorphic
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x1028029b0> attrcache size: 2
+DEBUG:spyne:gc.collect() took around 20ms.
+DEBUG:spyne.server.wsgi:Add http header 'accept_encoding' = ['gzip,deflate']
+DEBUG:spyne.server.wsgi:Add http header 'soapaction' = ['"get_prescription"']
+DEBUG:spyne.server.wsgi:Add http header 'host' = ['127.0.0.1:8002']
+DEBUG:spyne.server.wsgi:Add http header 'connection' = ['Keep-Alive']
+DEBUG:spyne.server.wsgi:Add http header 'user_agent' = ['Apache-HttpClient/4.5.5 (Java/16.0.2)']
+DEBUG:spyne.protocol.xml:Validated ? True
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x102802560> attrcache size: 3
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x102802560> attrcache size: 4
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x102802560> attrcache size: 4
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x102802560> attrcache size: 4
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x102802560> attrcache size: 4
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x102802560> attrcache size: 4
+ERROR:root:Error retrieving prescription with id 1: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[Patient(patients)]'. Original exception was: Could not determine join condition between parent/child tables on relationship Patient.medical_records - there are no foreign keys linking these tables.  Ensure that referencing columns are associated with a ForeignKey or ForeignKeyConstraint, or specify a 'primaryjoin' expression.
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x1028029b0> attrcache size: 3
+DEBUG:spyne.protocol._base:PMORPH Skipped: <spyne.protocol.soap.soap11.Soap11 object at 0x1028029b0> is NOT polymorphic
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x1028029b0> attrcache size: 4
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x1028029b0> attrcache size: 4
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x1028029b0> attrcache size: 4
+DEBUG:spyne.protocol._base:PMORPH Skipped: <spyne.protocol.soap.soap11.Soap11 object at 0x1028029b0> is NOT polymorphic
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x1028029b0> attrcache size: 4
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x1028029b0> attrcache size: 4
+DEBUG:spyne:gc.collect() took around 20ms.
+DEBUG:spyne.server.wsgi:Add http header 'accept_encoding' = ['gzip,deflate']
+DEBUG:spyne.server.wsgi:Add http header 'soapaction' = ['"add_prescription"']
+DEBUG:spyne.server.wsgi:Add http header 'host' = ['127.0.0.1:8002']
+DEBUG:spyne.server.wsgi:Add http header 'connection' = ['Keep-Alive']
+DEBUG:spyne.server.wsgi:Add http header 'user_agent' = ['Apache-HttpClient/4.5.5 (Java/16.0.2)']
+DEBUG:spyne.protocol.xml:Validated ? True
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x102802560> attrcache size: 4
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x102802560> attrcache size: 4
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x102802560> attrcache size: 4
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x102802560> attrcache size: 4
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x102802560> attrcache size: 4
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x102802560> attrcache size: 4
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x102802560> attrcache size: 4
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x102802560> attrcache size: 4
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x102802560> attrcache size: 4
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x102802560> attrcache size: 4
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x102802560> attrcache size: 4
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x102802560> attrcache size: 4
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x102802560> attrcache size: 4
+ERROR:root:Error adding prescription: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[Patient(patients)]'. Original exception was: Could not determine join condition between parent/child tables on relationship Patient.medical_records - there are no foreign keys linking these tables.  Ensure that referencing columns are associated with a ForeignKey or ForeignKeyConstraint, or specify a 'primaryjoin' expression.
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x1028029b0> attrcache size: 4
+DEBUG:spyne.protocol._base:PMORPH Skipped: <spyne.protocol.soap.soap11.Soap11 object at 0x1028029b0> is NOT polymorphic
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x1028029b0> attrcache size: 4
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x1028029b0> attrcache size: 4
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x1028029b0> attrcache size: 4
+DEBUG:spyne.protocol._base:PMORPH Skipped: <spyne.protocol.soap.soap11.Soap11 object at 0x1028029b0> is NOT polymorphic
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x1028029b0> attrcache size: 4
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x1028029b0> attrcache size: 4
+DEBUG:spyne:gc.collect() took around 20ms.
+DEBUG:spyne.server.wsgi:Add http header 'accept_encoding' = ['gzip,deflate']
+DEBUG:spyne.server.wsgi:Add http header 'soapaction' = ['"add_doctor"']
+DEBUG:spyne.server.wsgi:Add http header 'host' = ['127.0.0.1:8003']
+DEBUG:spyne.server.wsgi:Add http header 'connection' = ['Keep-Alive']
+DEBUG:spyne.server.wsgi:Add http header 'user_agent' = ['Apache-HttpClient/4.5.5 (Java/16.0.2)']
+DEBUG:spyne.protocol.xml:Validated ? False
+DEBUG:spyne.protocol._base:PMORPH Skipped: <spyne.protocol.soap.soap11.Soap11 object at 0x10285ed70> is NOT polymorphic
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x10285ed70> attrcache size: 1
+DEBUG:spyne:gc.collect() took around 30ms.
+DEBUG:spyne.server.wsgi:Add http header 'accept_encoding' = ['gzip,deflate']
+DEBUG:spyne.server.wsgi:Add http header 'soapaction' = ['"add_doctor"']
+DEBUG:spyne.server.wsgi:Add http header 'host' = ['127.0.0.1:8003']
+DEBUG:spyne.server.wsgi:Add http header 'connection' = ['Keep-Alive']
+DEBUG:spyne.server.wsgi:Add http header 'user_agent' = ['Apache-HttpClient/4.5.5 (Java/16.0.2)']
+DEBUG:spyne.protocol.xml:Validated ? False
+DEBUG:spyne.protocol._base:PMORPH Skipped: <spyne.protocol.soap.soap11.Soap11 object at 0x10285ed70> is NOT polymorphic
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x10285ed70> attrcache size: 1
+DEBUG:spyne:gc.collect() took around 30ms.
+DEBUG:spyne.server.wsgi:Add http header 'host' = ['localhost:8001']
+DEBUG:spyne.server.wsgi:Add http header 'connection' = ['keep-alive']
+DEBUG:spyne.server.wsgi:Add http header 'sec_ch_ua' = ['"Google Chrome";v="131", "Chromium";v="131", "Not_A Brand";v="24"']
+DEBUG:spyne.server.wsgi:Add http header 'sec_ch_ua_mobile' = ['?0']
+DEBUG:spyne.server.wsgi:Add http header 'sec_ch_ua_platform' = ['"macOS"']
+DEBUG:spyne.server.wsgi:Add http header 'upgrade_insecure_requests' = ['1']
+DEBUG:spyne.server.wsgi:Add http header 'user_agent' = ['Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36']
+DEBUG:spyne.server.wsgi:Add http header 'accept' = ['text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7']
+DEBUG:spyne.server.wsgi:Add http header 'sec_fetch_site' = ['none']
+DEBUG:spyne.server.wsgi:Add http header 'sec_fetch_mode' = ['navigate']
+DEBUG:spyne.server.wsgi:Add http header 'sec_fetch_user' = ['?1']
+DEBUG:spyne.server.wsgi:Add http header 'sec_fetch_dest' = ['document']
+DEBUG:spyne.server.wsgi:Add http header 'accept_encoding' = ['gzip, deflate, br, zstd']
+DEBUG:spyne.server.wsgi:Add http header 'accept_language' = ['en-US,en;q=0.9,ar;q=0.8,fr;q=0.7']
+DEBUG:spyne.server.wsgi:Add http header 'cookie' = ['username-localhost-8888="2|1:0|10:1731618899|23:username-localhost-8888|196:eyJ1c2VybmFtZSI6ICIwYjI3MjE4MWM2MjE0Mzg4YWE4YTBlYjc1ZDIzOTM4YyIsICJuYW1lIjogIkFub255bW91cyBIZWxpa2UiLCAiZGlzcGxheV9uYW1lIjogIkFub255bW91cyBIZWxpa2UiLCAiaW5pdGlhbHMiOiAiQUgiLCAiY29sb3IiOiBudWxsfQ==|24028717e5fcde144b70862f05051ff27d9bb201642ff9f2c8870755e5cf4fbc"; _xsrf=2|90f41d86|901f62505cf814556cbfb83b18406f0a|1731618899']
+DEBUG:spyne:gc.collect() took around 30ms.
+DEBUG:spyne.server.wsgi:Add http header 'host' = ['localhost:8001']
+DEBUG:spyne.server.wsgi:Add http header 'connection' = ['keep-alive']
+DEBUG:spyne.server.wsgi:Add http header 'sec_ch_ua_platform' = ['"macOS"']
+DEBUG:spyne.server.wsgi:Add http header 'user_agent' = ['Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36']
+DEBUG:spyne.server.wsgi:Add http header 'sec_ch_ua' = ['"Google Chrome";v="131", "Chromium";v="131", "Not_A Brand";v="24"']
+DEBUG:spyne.server.wsgi:Add http header 'sec_ch_ua_mobile' = ['?0']
+DEBUG:spyne.server.wsgi:Add http header 'accept' = ['image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8']
+DEBUG:spyne.server.wsgi:Add http header 'sec_fetch_site' = ['same-origin']
+DEBUG:spyne.server.wsgi:Add http header 'sec_fetch_mode' = ['no-cors']
+DEBUG:spyne.server.wsgi:Add http header 'sec_fetch_dest' = ['image']
+DEBUG:spyne.server.wsgi:Add http header 'referer' = ['http://localhost:8001/?wsdl']
+DEBUG:spyne.server.wsgi:Add http header 'accept_encoding' = ['gzip, deflate, br, zstd']
+DEBUG:spyne.server.wsgi:Add http header 'accept_language' = ['en-US,en;q=0.9,ar;q=0.8,fr;q=0.7']
+DEBUG:spyne.server.wsgi:Add http header 'cookie' = ['username-localhost-8888="2|1:0|10:1731618899|23:username-localhost-8888|196:eyJ1c2VybmFtZSI6ICIwYjI3MjE4MWM2MjE0Mzg4YWE4YTBlYjc1ZDIzOTM4YyIsICJuYW1lIjogIkFub255bW91cyBIZWxpa2UiLCAiZGlzcGxheV9uYW1lIjogIkFub255bW91cyBIZWxpa2UiLCAiaW5pdGlhbHMiOiAiQUgiLCAiY29sb3IiOiBudWxsfQ==|24028717e5fcde144b70862f05051ff27d9bb201642ff9f2c8870755e5cf4fbc"; _xsrf=2|90f41d86|901f62505cf814556cbfb83b18406f0a|1731618899']
+DEBUG:spyne.protocol._base:PMORPH Skipped: <spyne.protocol.soap.soap11.Soap11 object at 0x102802380> is NOT polymorphic
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x102802380> attrcache size: 1
+DEBUG:spyne.server.wsgi:Add http header 'accept_encoding' = ['gzip,deflate']
+DEBUG:spyne.server.wsgi:Add http header 'soapaction' = ['"add_doctor"']
+DEBUG:spyne.server.wsgi:Add http header 'host' = ['127.0.0.1:8003']
+DEBUG:spyne.server.wsgi:Add http header 'connection' = ['Keep-Alive']
+DEBUG:spyne.server.wsgi:Add http header 'user_agent' = ['Apache-HttpClient/4.5.5 (Java/16.0.2)']
+DEBUG:spyne.protocol.xml:Validated ? False
+DEBUG:spyne.protocol._base:PMORPH Skipped: <spyne.protocol.soap.soap11.Soap11 object at 0x10285ed70> is NOT polymorphic
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x10285ed70> attrcache size: 1
+DEBUG:spyne:gc.collect() took around 30ms.
+DEBUG:spyne.server.wsgi:Add http header 'accept_encoding' = ['gzip,deflate']
+DEBUG:spyne.server.wsgi:Add http header 'soapaction' = ['"add_doctor"']
+DEBUG:spyne.server.wsgi:Add http header 'host' = ['127.0.0.1:8003']
+DEBUG:spyne.server.wsgi:Add http header 'connection' = ['Keep-Alive']
+DEBUG:spyne.server.wsgi:Add http header 'user_agent' = ['Apache-HttpClient/4.5.5 (Java/16.0.2)']
+DEBUG:spyne.protocol.xml:Validated ? False
+DEBUG:spyne.protocol._base:PMORPH Skipped: <spyne.protocol.soap.soap11.Soap11 object at 0x10285ed70> is NOT polymorphic
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x10285ed70> attrcache size: 1
+DEBUG:spyne:gc.collect() took around 10ms.
+DEBUG:spyne.server.wsgi:Add http header 'accept_encoding' = ['gzip,deflate']
+DEBUG:spyne.server.wsgi:Add http header 'soapaction' = ['"add_doctor"']
+DEBUG:spyne.server.wsgi:Add http header 'host' = ['127.0.0.1:8003']
+DEBUG:spyne.server.wsgi:Add http header 'connection' = ['Keep-Alive']
+DEBUG:spyne.server.wsgi:Add http header 'user_agent' = ['Apache-HttpClient/4.5.5 (Java/16.0.2)']
+DEBUG:spyne.protocol.xml:Validated ? False
+DEBUG:spyne.protocol._base:PMORPH Skipped: <spyne.protocol.soap.soap11.Soap11 object at 0x10285ed70> is NOT polymorphic
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x10285ed70> attrcache size: 1
+DEBUG:spyne.server.wsgi:Add http header 'accept_encoding' = ['gzip,deflate']
+DEBUG:spyne.server.wsgi:Add http header 'soapaction' = ['"add_doctor"']
+DEBUG:spyne.server.wsgi:Add http header 'host' = ['127.0.0.1:8003']
+DEBUG:spyne.server.wsgi:Add http header 'connection' = ['Keep-Alive']
+DEBUG:spyne.server.wsgi:Add http header 'user_agent' = ['Apache-HttpClient/4.5.5 (Java/16.0.2)']
+DEBUG:spyne.protocol.xml:Validated ? False
+DEBUG:spyne.protocol._base:PMORPH Skipped: <spyne.protocol.soap.soap11.Soap11 object at 0x10285ed70> is NOT polymorphic
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x10285ed70> attrcache size: 1
+DEBUG:spyne:gc.collect() took around 30ms.
+DEBUG:spyne.server.wsgi:Add http header 'accept_encoding' = ['gzip,deflate']
+DEBUG:spyne.server.wsgi:Add http header 'soapaction' = ['"add_doctor"']
+DEBUG:spyne.server.wsgi:Add http header 'host' = ['127.0.0.1:8003']
+DEBUG:spyne.server.wsgi:Add http header 'connection' = ['Keep-Alive']
+DEBUG:spyne.server.wsgi:Add http header 'user_agent' = ['Apache-HttpClient/4.5.5 (Java/16.0.2)']
+DEBUG:spyne.protocol.xml:Validated ? False
+DEBUG:spyne.protocol._base:PMORPH Skipped: <spyne.protocol.soap.soap11.Soap11 object at 0x10285ed70> is NOT polymorphic
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x10285ed70> attrcache size: 1
+DEBUG:spyne:gc.collect() took around 30ms.
+DEBUG:spyne.server.wsgi:Add http header 'accept_encoding' = ['gzip,deflate']
+DEBUG:spyne.server.wsgi:Add http header 'soapaction' = ['"add_doctor"']
+DEBUG:spyne.server.wsgi:Add http header 'host' = ['127.0.0.1:8003']
+DEBUG:spyne.server.wsgi:Add http header 'connection' = ['Keep-Alive']
+DEBUG:spyne.server.wsgi:Add http header 'user_agent' = ['Apache-HttpClient/4.5.5 (Java/16.0.2)']
+DEBUG:spyne.protocol.xml:Validated ? False
+DEBUG:spyne.protocol._base:PMORPH Skipped: <spyne.protocol.soap.soap11.Soap11 object at 0x10285ed70> is NOT polymorphic
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x10285ed70> attrcache size: 1
+DEBUG:spyne:gc.collect() took around 30ms.
+DEBUG:spyne.server.wsgi:Add http header 'accept_encoding' = ['gzip,deflate']
+DEBUG:spyne.server.wsgi:Add http header 'soapaction' = ['"list_doctors"']
+DEBUG:spyne.server.wsgi:Add http header 'host' = ['127.0.0.1:8003']
+DEBUG:spyne.server.wsgi:Add http header 'connection' = ['Keep-Alive']
+DEBUG:spyne.server.wsgi:Add http header 'user_agent' = ['Apache-HttpClient/4.5.5 (Java/16.0.2)']
+DEBUG:spyne.protocol.xml:Validated ? False
+DEBUG:spyne.protocol._base:PMORPH Skipped: <spyne.protocol.soap.soap11.Soap11 object at 0x10285ed70> is NOT polymorphic
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x10285ed70> attrcache size: 1
+DEBUG:spyne:gc.collect() took around 30ms.
+DEBUG:spyne.model.complex:Got bases for add_prescription from meta: (<class 'spyne.model.complex.ComplexModel'>,)
+DEBUG:spyne.model.complex:Got bases for add_prescriptionResponse from meta: (<class 'spyne.model.complex.ComplexModel'>,)
+DEBUG:spyne.model.complex:Got bases for get_prescription from meta: (<class 'spyne.model.complex.ComplexModel'>,)
+DEBUG:spyne.model.complex:Got bases for get_prescriptionResponse from meta: (<class 'spyne.model.complex.ComplexModel'>,)
+INFO:spyne.application:Initializing application {telemedicine.soap}Application...
+DEBUG:spyne.interface._base:populating app.soap.prescriptions_service.PrescriptionService types...
+DEBUG:spyne.interface._base:  enumerating classes for method 'add_prescription'
+DEBUG:spyne.interface._base:    adding class "<class 'spyne.model.complex.add_prescription'>" for '{telemedicine.soap}add_prescription'
+DEBUG:spyne.interface._base:    adding add_prescription.patient_id = <class 'spyne.model.primitive.number.Integer'>
+DEBUG:spyne.interface._base:    adding class "<class 'spyne.model.primitive.number.Integer'>" for '{http://www.w3.org/2001/XMLSchema}integer'
+DEBUG:spyne.interface._base:    adding add_prescription.doctor_id = <class 'spyne.model.primitive.number.Integer'>
+DEBUG:spyne.interface._base:    adding add_prescription.content = <class 'spyne.model.primitive.string.Unicode'>
+DEBUG:spyne.interface._base:    adding class "<class 'spyne.model.primitive.string.Unicode'>" for '{http://www.w3.org/2001/XMLSchema}string'
+DEBUG:spyne.interface._base:    adding class "<class 'spyne.model.complex.add_prescriptionResponse'>" for '{telemedicine.soap}add_prescriptionResponse'
+DEBUG:spyne.interface._base:    adding add_prescriptionResponse.add_prescriptionResult = <class 'spyne.model.primitive.string.Unicode'>
+DEBUG:spyne.interface._base:  enumerating classes for method 'get_prescription'
+DEBUG:spyne.interface._base:    adding class "<class 'spyne.model.complex.get_prescription'>" for '{telemedicine.soap}get_prescription'
+DEBUG:spyne.interface._base:    adding get_prescription.prescription_id = <class 'spyne.model.primitive.number.Integer'>
+DEBUG:spyne.interface._base:    adding class "<class 'spyne.model.complex.get_prescriptionResponse'>" for '{telemedicine.soap}get_prescriptionResponse'
+DEBUG:spyne.interface._base:    adding get_prescriptionResponse.get_prescriptionResult = <class 'spyne.model.primitive.string.Unicode'>
+DEBUG:spyne.interface._base:populating 'app.soap.prescriptions_service.PrescriptionService' routes...
+DEBUG:spyne.interface._base:  adding method PrescriptionService.add_prescription to match '{telemedicine.soap}add_prescription' tag.
+DEBUG:spyne.interface._base:  adding method PrescriptionService.get_prescription to match '{telemedicine.soap}get_prescription' tag.
+DEBUG:spyne.interface._base:From this point on, you're not supposed to make any changes to the class and method structure of the exposed services.
+DEBUG:spyne.interface.xml_schema:generating schema for targetNamespace='telemedicine.soap', prefix: 'tns' in dir '/var/folders/8t/0rk_0_zs50l49nwss08qx4g40000gn/T/spynee1qi4tkc'
+DEBUG:spyne.interface.xml_schema:writing '/var/folders/8t/0rk_0_zs50l49nwss08qx4g40000gn/T/spynee1qi4tkc/tns.xsd' for ns telemedicine.soap
+DEBUG:spyne.interface.xml_schema:Schema built. Removed '/var/folders/8t/0rk_0_zs50l49nwss08qx4g40000gn/T/spynee1qi4tkc'
+DEBUG:spyne.util.appreg:Registering <spyne.application.Application object at 0x10393eb90> as ('telemedicine.soap', 'Application')
+DEBUG:spyne.model._base:	integer: setting min_occurs=1
+DEBUG:spyne.model._base:	integer: setting nillable=False
+DEBUG:spyne.model._base:	integer: setting max_str_len=Decimal('Infinity')
+DEBUG:spyne.model._base:	string: setting min_occurs=1
+DEBUG:spyne.model._base:	string: setting nillable=False
+DEBUG:spyne.model._base:	string: setting min_occurs=1
+DEBUG:spyne.model._base:	string: setting nillable=False
+DEBUG:spyne.model.complex:Got bases for DoctorSoap from meta: (<class 'spyne.model.complex.ComplexModel'>,)
+DEBUG:spyne.model._base:	integer: setting name='doctor_id'
+DEBUG:spyne.model._base:	integer: setting max_str_len=Decimal('Infinity')
+DEBUG:spyne.model._base:	string: setting name='name'
+DEBUG:spyne.model._base:	string: setting name='specialty'
+DEBUG:spyne.model._base:	integer: setting name='doctor_id'
+DEBUG:spyne.model._base:	integer: setting max_str_len=Decimal('Infinity')
+DEBUG:spyne.model._base:	string: setting name='name'
+DEBUG:spyne.model._base:	string: setting name='specialty'
+DEBUG:spyne.model._base:	integer: setting name='doctor_id'
+DEBUG:spyne.model._base:	integer: setting max_str_len=Decimal('Infinity')
+DEBUG:spyne.model.complex:Got bases for Iterable from orig: (<class 'spyne.model.complex.Array'>,)
+DEBUG:spyne.model._base:	DoctorSoap: setting max_occurs=Decimal('Infinity')
+DEBUG:spyne.model.complex:Got bases for DoctorSoap from orig: (<class 'spyne.model.complex.ComplexModel'>,)
+DEBUG:spyne.model.complex:Got bases for add_doctor from meta: (<class 'spyne.model.complex.ComplexModel'>,)
+DEBUG:spyne.model.complex:Got bases for add_doctorResponse from meta: (<class 'spyne.model.complex.ComplexModel'>,)
+DEBUG:spyne.model.complex:Got bases for update_doctor from meta: (<class 'spyne.model.complex.ComplexModel'>,)
+DEBUG:spyne.model.complex:Got bases for update_doctorResponse from meta: (<class 'spyne.model.complex.ComplexModel'>,)
+DEBUG:spyne.model.complex:Got bases for delete_doctor from meta: (<class 'spyne.model.complex.ComplexModel'>,)
+DEBUG:spyne.model.complex:Got bases for delete_doctorResponse from meta: (<class 'spyne.model.complex.ComplexModel'>,)
+DEBUG:spyne.model.complex:Got bases for list_doctors from meta: (<class 'spyne.model.complex.ComplexModel'>,)
+DEBUG:spyne.model.complex:Got bases for list_doctorsResponse from meta: (<class 'spyne.model.complex.ComplexModel'>,)
+INFO:spyne.application:Initializing application {telemedicine.soap}Application...
+DEBUG:spyne.interface._base:populating app.soap.doctors_service.DoctorService types...
+DEBUG:spyne.interface._base:  enumerating classes for method 'add_doctor'
+DEBUG:spyne.interface._base:    adding class "<class 'spyne.model.complex.add_doctor'>" for '{telemedicine.soap}add_doctor'
+DEBUG:spyne.interface._base:    adding add_doctor.doctor_id = <class 'spyne.model.primitive.number.Integer'>
+DEBUG:spyne.interface._base:    adding class "<class 'spyne.model.primitive.number.Integer'>" for '{http://www.w3.org/2001/XMLSchema}integer'
+DEBUG:spyne.interface._base:    adding add_doctor.name = <class 'spyne.model.primitive.string.Unicode'>
+DEBUG:spyne.interface._base:    adding class "<class 'spyne.model.primitive.string.Unicode'>" for '{http://www.w3.org/2001/XMLSchema}string'
+DEBUG:spyne.interface._base:    adding add_doctor.specialty = <class 'spyne.model.primitive.string.Unicode'>
+DEBUG:spyne.interface._base:    adding class "<class 'spyne.model.complex.add_doctorResponse'>" for '{telemedicine.soap}add_doctorResponse'
+DEBUG:spyne.interface._base:    adding add_doctorResponse.add_doctorResult = <class 'spyne.model.primitive.string.Unicode'>
+DEBUG:spyne.interface._base:  enumerating classes for method 'update_doctor'
+DEBUG:spyne.interface._base:    adding class "<class 'spyne.model.complex.update_doctor'>" for '{telemedicine.soap}update_doctor'
+DEBUG:spyne.interface._base:    adding update_doctor.doctor_id = <class 'spyne.model.primitive.number.Integer'>
+DEBUG:spyne.interface._base:    adding update_doctor.name = <class 'spyne.model.primitive.string.Unicode'>
+DEBUG:spyne.interface._base:    adding update_doctor.specialty = <class 'spyne.model.primitive.string.Unicode'>
+DEBUG:spyne.interface._base:    adding class "<class 'spyne.model.complex.update_doctorResponse'>" for '{telemedicine.soap}update_doctorResponse'
+DEBUG:spyne.interface._base:    adding update_doctorResponse.update_doctorResult = <class 'spyne.model.primitive.string.Unicode'>
+DEBUG:spyne.interface._base:  enumerating classes for method 'delete_doctor'
+DEBUG:spyne.interface._base:    adding class "<class 'spyne.model.complex.delete_doctor'>" for '{telemedicine.soap}delete_doctor'
+DEBUG:spyne.interface._base:    adding delete_doctor.doctor_id = <class 'spyne.model.primitive.number.Integer'>
+DEBUG:spyne.interface._base:    adding class "<class 'spyne.model.complex.delete_doctorResponse'>" for '{telemedicine.soap}delete_doctorResponse'
+DEBUG:spyne.interface._base:    adding delete_doctorResponse.delete_doctorResult = <class 'spyne.model.primitive.string.Unicode'>
+DEBUG:spyne.interface._base:  enumerating classes for method 'list_doctors'
+DEBUG:spyne.interface._base:    adding class "<class 'spyne.model.complex.list_doctors'>" for '{telemedicine.soap}list_doctors'
+DEBUG:spyne.interface._base:    adding class "<class 'spyne.model.complex.list_doctorsResponse'>" for '{telemedicine.soap}list_doctorsResponse'
+DEBUG:spyne.interface._base:    adding list_doctorsResponse.list_doctorsResult = <class 'spyne.model.complex.Iterable'>
+DEBUG:spyne.interface._base:    adding class "<class 'spyne.model.complex.Iterable'>" for '{app.soap.doctors_service}DoctorSoapArray'
+DEBUG:spyne.interface._base:    adding DoctorSoapArray.DoctorSoap = <class 'app.soap.doctors_service.DoctorSoap'>
+DEBUG:spyne.interface._base:    adding class "<class 'app.soap.doctors_service.DoctorSoap'>" for '{app.soap.doctors_service}DoctorSoap'
+DEBUG:spyne.interface._base:    adding DoctorSoap.id = <class 'spyne.model.primitive.number.Integer'>
+DEBUG:spyne.interface._base:    adding DoctorSoap.name = <class 'spyne.model.primitive.string.Unicode'>
+DEBUG:spyne.interface._base:    adding DoctorSoap.specialty = <class 'spyne.model.primitive.string.Unicode'>
+DEBUG:spyne.interface._base:    importing 'app.soap.doctors_service' to 'telemedicine.soap' for list_doctorsResponse.list_doctorsResult(<class 'spyne.model.complex.Iterable'>)
+DEBUG:spyne.interface._base:populating 'app.soap.doctors_service.DoctorService' routes...
+DEBUG:spyne.interface._base:  adding method DoctorService.add_doctor to match '{telemedicine.soap}add_doctor' tag.
+DEBUG:spyne.interface._base:  adding method DoctorService.update_doctor to match '{telemedicine.soap}update_doctor' tag.
+DEBUG:spyne.interface._base:  adding method DoctorService.delete_doctor to match '{telemedicine.soap}delete_doctor' tag.
+DEBUG:spyne.interface._base:  adding method DoctorService.list_doctors to match '{telemedicine.soap}list_doctors' tag.
+DEBUG:spyne.interface._base:From this point on, you're not supposed to make any changes to the class and method structure of the exposed services.
+DEBUG:spyne.interface.xml_schema:generating schema for targetNamespace='telemedicine.soap', prefix: 'tns' in dir '/var/folders/8t/0rk_0_zs50l49nwss08qx4g40000gn/T/spynef4di82bl'
+DEBUG:spyne.interface.xml_schema:writing '/var/folders/8t/0rk_0_zs50l49nwss08qx4g40000gn/T/spynef4di82bl/tns.xsd' for ns telemedicine.soap
+DEBUG:spyne.interface.xml_schema:writing '/var/folders/8t/0rk_0_zs50l49nwss08qx4g40000gn/T/spynef4di82bl/s0.xsd' for ns app.soap.doctors_service
+DEBUG:spyne.interface.xml_schema:Schema built. Removed '/var/folders/8t/0rk_0_zs50l49nwss08qx4g40000gn/T/spynef4di82bl'
+WARNING:spyne.util.appreg:Overwriting application ('telemedicine.soap', 'Application')(<spyne.application.Application object at 0x10399a8f0>).
+DEBUG:spyne.util.appreg:Stack trace of the instantiation:
+  File "/Users/amine/Desktop/telemedicine_services/run_soap.py", line 15, in <module>
+    from app.soap.medical_records_service import wsgi_app as medical_records_app
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/amine/Desktop/telemedicine_services/app/soap/__init__.py", line 2, in <module>
+    from .prescriptions_service import wsgi_app as prescriptions_app
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/amine/Desktop/telemedicine_services/app/soap/prescriptions_service.py", line 44, in <module>
+    application = Application(
+  File "/Users/amine/.pyenv/versions/3.10.12/lib/python3.10/site-packages/spyne/application.py", line 151, in __init__
+    register_application(self)
+  File "/Users/amine/.pyenv/versions/3.10.12/lib/python3.10/site-packages/spyne/util/appreg.py", line 56, in register_application
+    stack = traceback.format_stack()
+
+DEBUG:spyne.util.appreg:Registering <spyne.application.Application object at 0x10399a8f0> as ('telemedicine.soap', 'Application')
+DEBUG:spyne.server.wsgi:Add http header 'accept_encoding' = ['gzip,deflate']
+DEBUG:spyne.server.wsgi:Add http header 'soapaction' = ['"add_doctor"']
+DEBUG:spyne.server.wsgi:Add http header 'host' = ['127.0.0.1:8003']
+DEBUG:spyne.server.wsgi:Add http header 'connection' = ['Keep-Alive']
+DEBUG:spyne.server.wsgi:Add http header 'user_agent' = ['Apache-HttpClient/4.5.5 (Java/16.0.2)']
+DEBUG:spyne.protocol.xml:Validated ? False
+DEBUG:spyne.protocol._base:PMORPH Skipped: <spyne.protocol.soap.soap11.Soap11 object at 0x10399b160> is NOT polymorphic
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x10399b160> attrcache size: 0
+DEBUG:spyne:gc.collect() took around 30ms.
+DEBUG:spyne.server.wsgi:Add http header 'host' = ['localhost:8001']
+DEBUG:spyne.server.wsgi:Add http header 'connection' = ['keep-alive']
+DEBUG:spyne.server.wsgi:Add http header 'sec_ch_ua' = ['"Google Chrome";v="131", "Chromium";v="131", "Not_A Brand";v="24"']
+DEBUG:spyne.server.wsgi:Add http header 'sec_ch_ua_mobile' = ['?0']
+DEBUG:spyne.server.wsgi:Add http header 'sec_ch_ua_platform' = ['"macOS"']
+DEBUG:spyne.server.wsgi:Add http header 'upgrade_insecure_requests' = ['1']
+DEBUG:spyne.server.wsgi:Add http header 'user_agent' = ['Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36']
+DEBUG:spyne.server.wsgi:Add http header 'accept' = ['text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7']
+DEBUG:spyne.server.wsgi:Add http header 'sec_fetch_site' = ['none']
+DEBUG:spyne.server.wsgi:Add http header 'sec_fetch_mode' = ['navigate']
+DEBUG:spyne.server.wsgi:Add http header 'sec_fetch_user' = ['?1']
+DEBUG:spyne.server.wsgi:Add http header 'sec_fetch_dest' = ['document']
+DEBUG:spyne.server.wsgi:Add http header 'accept_encoding' = ['gzip, deflate, br, zstd']
+DEBUG:spyne.server.wsgi:Add http header 'accept_language' = ['en-US,en;q=0.9,ar;q=0.8,fr;q=0.7']
+DEBUG:spyne.server.wsgi:Add http header 'cookie' = ['username-localhost-8888="2|1:0|10:1731618899|23:username-localhost-8888|196:eyJ1c2VybmFtZSI6ICIwYjI3MjE4MWM2MjE0Mzg4YWE4YTBlYjc1ZDIzOTM4YyIsICJuYW1lIjogIkFub255bW91cyBIZWxpa2UiLCAiZGlzcGxheV9uYW1lIjogIkFub255bW91cyBIZWxpa2UiLCAiaW5pdGlhbHMiOiAiQUgiLCAiY29sb3IiOiBudWxsfQ==|24028717e5fcde144b70862f05051ff27d9bb201642ff9f2c8870755e5cf4fbc"; _xsrf=2|90f41d86|901f62505cf814556cbfb83b18406f0a|1731618899']
+DEBUG:spyne:gc.collect() took around 20ms.
+DEBUG:spyne.server.wsgi:Add http header 'host' = ['localhost:8001']
+DEBUG:spyne.server.wsgi:Add http header 'connection' = ['keep-alive']
+DEBUG:spyne.server.wsgi:Add http header 'sec_ch_ua_platform' = ['"macOS"']
+DEBUG:spyne.server.wsgi:Add http header 'user_agent' = ['Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36']
+DEBUG:spyne.server.wsgi:Add http header 'sec_ch_ua' = ['"Google Chrome";v="131", "Chromium";v="131", "Not_A Brand";v="24"']
+DEBUG:spyne.server.wsgi:Add http header 'sec_ch_ua_mobile' = ['?0']
+DEBUG:spyne.server.wsgi:Add http header 'accept' = ['image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8']
+DEBUG:spyne.server.wsgi:Add http header 'sec_fetch_site' = ['same-origin']
+DEBUG:spyne.server.wsgi:Add http header 'sec_fetch_mode' = ['no-cors']
+DEBUG:spyne.server.wsgi:Add http header 'sec_fetch_dest' = ['image']
+DEBUG:spyne.server.wsgi:Add http header 'referer' = ['http://localhost:8001/?wsdl']
+DEBUG:spyne.server.wsgi:Add http header 'accept_encoding' = ['gzip, deflate, br, zstd']
+DEBUG:spyne.server.wsgi:Add http header 'accept_language' = ['en-US,en;q=0.9,ar;q=0.8,fr;q=0.7']
+DEBUG:spyne.server.wsgi:Add http header 'cookie' = ['username-localhost-8888="2|1:0|10:1731618899|23:username-localhost-8888|196:eyJ1c2VybmFtZSI6ICIwYjI3MjE4MWM2MjE0Mzg4YWE4YTBlYjc1ZDIzOTM4YyIsICJuYW1lIjogIkFub255bW91cyBIZWxpa2UiLCAiZGlzcGxheV9uYW1lIjogIkFub255bW91cyBIZWxpa2UiLCAiaW5pdGlhbHMiOiAiQUgiLCAiY29sb3IiOiBudWxsfQ==|24028717e5fcde144b70862f05051ff27d9bb201642ff9f2c8870755e5cf4fbc"; _xsrf=2|90f41d86|901f62505cf814556cbfb83b18406f0a|1731618899']
+DEBUG:spyne.protocol._base:PMORPH Skipped: <spyne.protocol.soap.soap11.Soap11 object at 0x10393e380> is NOT polymorphic
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x10393e380> attrcache size: 0
+DEBUG:spyne.server.wsgi:Add http header 'host' = ['localhost:8002']
+DEBUG:spyne.server.wsgi:Add http header 'connection' = ['keep-alive']
+DEBUG:spyne.server.wsgi:Add http header 'sec_ch_ua' = ['"Google Chrome";v="131", "Chromium";v="131", "Not_A Brand";v="24"']
+DEBUG:spyne.server.wsgi:Add http header 'sec_ch_ua_mobile' = ['?0']
+DEBUG:spyne.server.wsgi:Add http header 'sec_ch_ua_platform' = ['"macOS"']
+DEBUG:spyne.server.wsgi:Add http header 'upgrade_insecure_requests' = ['1']
+DEBUG:spyne.server.wsgi:Add http header 'user_agent' = ['Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36']
+DEBUG:spyne.server.wsgi:Add http header 'accept' = ['text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7']
+DEBUG:spyne.server.wsgi:Add http header 'sec_fetch_site' = ['none']
+DEBUG:spyne.server.wsgi:Add http header 'sec_fetch_mode' = ['navigate']
+DEBUG:spyne.server.wsgi:Add http header 'sec_fetch_user' = ['?1']
+DEBUG:spyne.server.wsgi:Add http header 'sec_fetch_dest' = ['document']
+DEBUG:spyne.server.wsgi:Add http header 'accept_encoding' = ['gzip, deflate, br, zstd']
+DEBUG:spyne.server.wsgi:Add http header 'accept_language' = ['en-US,en;q=0.9,ar;q=0.8,fr;q=0.7']
+DEBUG:spyne.server.wsgi:Add http header 'cookie' = ['username-localhost-8888="2|1:0|10:1731618899|23:username-localhost-8888|196:eyJ1c2VybmFtZSI6ICIwYjI3MjE4MWM2MjE0Mzg4YWE4YTBlYjc1ZDIzOTM4YyIsICJuYW1lIjogIkFub255bW91cyBIZWxpa2UiLCAiZGlzcGxheV9uYW1lIjogIkFub255bW91cyBIZWxpa2UiLCAiaW5pdGlhbHMiOiAiQUgiLCAiY29sb3IiOiBudWxsfQ==|24028717e5fcde144b70862f05051ff27d9bb201642ff9f2c8870755e5cf4fbc"; _xsrf=2|90f41d86|901f62505cf814556cbfb83b18406f0a|1731618899']
+DEBUG:spyne:gc.collect() took around 30ms.
+DEBUG:spyne.server.wsgi:Add http header 'host' = ['localhost:8002']
+DEBUG:spyne.server.wsgi:Add http header 'connection' = ['keep-alive']
+DEBUG:spyne.server.wsgi:Add http header 'sec_ch_ua_platform' = ['"macOS"']
+DEBUG:spyne.server.wsgi:Add http header 'user_agent' = ['Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36']
+DEBUG:spyne.server.wsgi:Add http header 'sec_ch_ua' = ['"Google Chrome";v="131", "Chromium";v="131", "Not_A Brand";v="24"']
+DEBUG:spyne.server.wsgi:Add http header 'sec_ch_ua_mobile' = ['?0']
+DEBUG:spyne.server.wsgi:Add http header 'accept' = ['image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8']
+DEBUG:spyne.server.wsgi:Add http header 'sec_fetch_site' = ['same-origin']
+DEBUG:spyne.server.wsgi:Add http header 'sec_fetch_mode' = ['no-cors']
+DEBUG:spyne.server.wsgi:Add http header 'sec_fetch_dest' = ['image']
+DEBUG:spyne.server.wsgi:Add http header 'referer' = ['http://localhost:8002/?wsdl']
+DEBUG:spyne.server.wsgi:Add http header 'accept_encoding' = ['gzip, deflate, br, zstd']
+DEBUG:spyne.server.wsgi:Add http header 'accept_language' = ['en-US,en;q=0.9,ar;q=0.8,fr;q=0.7']
+DEBUG:spyne.server.wsgi:Add http header 'cookie' = ['username-localhost-8888="2|1:0|10:1731618899|23:username-localhost-8888|196:eyJ1c2VybmFtZSI6ICIwYjI3MjE4MWM2MjE0Mzg4YWE4YTBlYjc1ZDIzOTM4YyIsICJuYW1lIjogIkFub255bW91cyBIZWxpa2UiLCAiZGlzcGxheV9uYW1lIjogIkFub255bW91cyBIZWxpa2UiLCAiaW5pdGlhbHMiOiAiQUgiLCAiY29sb3IiOiBudWxsfQ==|24028717e5fcde144b70862f05051ff27d9bb201642ff9f2c8870755e5cf4fbc"; _xsrf=2|90f41d86|901f62505cf814556cbfb83b18406f0a|1731618899']
+DEBUG:spyne.protocol._base:PMORPH Skipped: <spyne.protocol.soap.soap11.Soap11 object at 0x10393e9b0> is NOT polymorphic
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x10393e9b0> attrcache size: 0
+DEBUG:spyne.server.wsgi:Add http header 'host' = ['localhost:8003']
+DEBUG:spyne.server.wsgi:Add http header 'connection' = ['keep-alive']
+DEBUG:spyne.server.wsgi:Add http header 'sec_ch_ua' = ['"Google Chrome";v="131", "Chromium";v="131", "Not_A Brand";v="24"']
+DEBUG:spyne.server.wsgi:Add http header 'sec_ch_ua_mobile' = ['?0']
+DEBUG:spyne.server.wsgi:Add http header 'sec_ch_ua_platform' = ['"macOS"']
+DEBUG:spyne.server.wsgi:Add http header 'upgrade_insecure_requests' = ['1']
+DEBUG:spyne.server.wsgi:Add http header 'user_agent' = ['Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36']
+DEBUG:spyne.server.wsgi:Add http header 'accept' = ['text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7']
+DEBUG:spyne.server.wsgi:Add http header 'sec_fetch_site' = ['none']
+DEBUG:spyne.server.wsgi:Add http header 'sec_fetch_mode' = ['navigate']
+DEBUG:spyne.server.wsgi:Add http header 'sec_fetch_user' = ['?1']
+DEBUG:spyne.server.wsgi:Add http header 'sec_fetch_dest' = ['document']
+DEBUG:spyne.server.wsgi:Add http header 'accept_encoding' = ['gzip, deflate, br, zstd']
+DEBUG:spyne.server.wsgi:Add http header 'accept_language' = ['en-US,en;q=0.9,ar;q=0.8,fr;q=0.7']
+DEBUG:spyne.server.wsgi:Add http header 'cookie' = ['username-localhost-8888="2|1:0|10:1731618899|23:username-localhost-8888|196:eyJ1c2VybmFtZSI6ICIwYjI3MjE4MWM2MjE0Mzg4YWE4YTBlYjc1ZDIzOTM4YyIsICJuYW1lIjogIkFub255bW91cyBIZWxpa2UiLCAiZGlzcGxheV9uYW1lIjogIkFub255bW91cyBIZWxpa2UiLCAiaW5pdGlhbHMiOiAiQUgiLCAiY29sb3IiOiBudWxsfQ==|24028717e5fcde144b70862f05051ff27d9bb201642ff9f2c8870755e5cf4fbc"; _xsrf=2|90f41d86|901f62505cf814556cbfb83b18406f0a|1731618899']
+DEBUG:spyne:gc.collect() took around 40ms.
+DEBUG:spyne.server.wsgi:Add http header 'host' = ['localhost:8003']
+DEBUG:spyne.server.wsgi:Add http header 'connection' = ['keep-alive']
+DEBUG:spyne.server.wsgi:Add http header 'sec_ch_ua_platform' = ['"macOS"']
+DEBUG:spyne.server.wsgi:Add http header 'user_agent' = ['Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36']
+DEBUG:spyne.server.wsgi:Add http header 'sec_ch_ua' = ['"Google Chrome";v="131", "Chromium";v="131", "Not_A Brand";v="24"']
+DEBUG:spyne.server.wsgi:Add http header 'sec_ch_ua_mobile' = ['?0']
+DEBUG:spyne.server.wsgi:Add http header 'accept' = ['image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8']
+DEBUG:spyne.server.wsgi:Add http header 'sec_fetch_site' = ['same-origin']
+DEBUG:spyne.server.wsgi:Add http header 'sec_fetch_mode' = ['no-cors']
+DEBUG:spyne.server.wsgi:Add http header 'sec_fetch_dest' = ['image']
+DEBUG:spyne.server.wsgi:Add http header 'referer' = ['http://localhost:8003/?wsdl']
+DEBUG:spyne.server.wsgi:Add http header 'accept_encoding' = ['gzip, deflate, br, zstd']
+DEBUG:spyne.server.wsgi:Add http header 'accept_language' = ['en-US,en;q=0.9,ar;q=0.8,fr;q=0.7']
+DEBUG:spyne.server.wsgi:Add http header 'cookie' = ['username-localhost-8888="2|1:0|10:1731618899|23:username-localhost-8888|196:eyJ1c2VybmFtZSI6ICIwYjI3MjE4MWM2MjE0Mzg4YWE4YTBlYjc1ZDIzOTM4YyIsICJuYW1lIjogIkFub255bW91cyBIZWxpa2UiLCAiZGlzcGxheV9uYW1lIjogIkFub255bW91cyBIZWxpa2UiLCAiaW5pdGlhbHMiOiAiQUgiLCAiY29sb3IiOiBudWxsfQ==|24028717e5fcde144b70862f05051ff27d9bb201642ff9f2c8870755e5cf4fbc"; _xsrf=2|90f41d86|901f62505cf814556cbfb83b18406f0a|1731618899']
+DEBUG:spyne.protocol._base:PMORPH Skipped: <spyne.protocol.soap.soap11.Soap11 object at 0x10399b160> is NOT polymorphic
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x10399b160> attrcache size: 1
+DEBUG:spyne.server.wsgi:Add http header 'accept_encoding' = ['gzip,deflate']
+DEBUG:spyne.server.wsgi:Add http header 'soapaction' = ['"add_doctor"']
+DEBUG:spyne.server.wsgi:Add http header 'host' = ['127.0.0.1:8003']
+DEBUG:spyne.server.wsgi:Add http header 'connection' = ['Keep-Alive']
+DEBUG:spyne.server.wsgi:Add http header 'user_agent' = ['Apache-HttpClient/4.5.5 (Java/16.0.2)']
+DEBUG:spyne.protocol.xml:Validated ? False
+DEBUG:spyne.protocol._base:PMORPH Skipped: <spyne.protocol.soap.soap11.Soap11 object at 0x10399b160> is NOT polymorphic
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x10399b160> attrcache size: 2
+DEBUG:spyne:gc.collect() took around 20ms.
+DEBUG:spyne.server.wsgi:Add http header 'accept_encoding' = ['gzip,deflate']
+DEBUG:spyne.server.wsgi:Add http header 'soapaction' = ['"add_doctor"']
+DEBUG:spyne.server.wsgi:Add http header 'host' = ['127.0.0.1:8003']
+DEBUG:spyne.server.wsgi:Add http header 'connection' = ['Keep-Alive']
+DEBUG:spyne.server.wsgi:Add http header 'user_agent' = ['Apache-HttpClient/4.5.5 (Java/16.0.2)']
+DEBUG:spyne.protocol.xml:Validated ? True
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x10399b730> attrcache size: 0
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x10399b730> attrcache size: 1
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x10399b730> attrcache size: 1
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x10399b730> attrcache size: 2
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x10399b730> attrcache size: 2
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x10399b730> attrcache size: 2
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x10399b730> attrcache size: 2
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x10399b730> attrcache size: 3
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x10399b730> attrcache size: 3
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x10399b730> attrcache size: 3
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x10399b730> attrcache size: 4
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x10399b730> attrcache size: 4
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x10399b160> attrcache size: 2
+DEBUG:spyne.protocol._base:PMORPH Skipped: <spyne.protocol.soap.soap11.Soap11 object at 0x10399b160> is NOT polymorphic
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x10399b160> attrcache size: 3
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x10399b160> attrcache size: 3
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x10399b160> attrcache size: 3
+DEBUG:spyne.protocol._base:PMORPH Skipped: <spyne.protocol.soap.soap11.Soap11 object at 0x10399b160> is NOT polymorphic
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x10399b160> attrcache size: 4
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x10399b160> attrcache size: 4
+DEBUG:spyne:gc.collect() took around 20ms.
+DEBUG:spyne.server.wsgi:Add http header 'accept_encoding' = ['gzip,deflate']
+DEBUG:spyne.server.wsgi:Add http header 'soapaction' = ['"add_doctor"']
+DEBUG:spyne.server.wsgi:Add http header 'host' = ['127.0.0.1:8003']
+DEBUG:spyne.server.wsgi:Add http header 'connection' = ['Keep-Alive']
+DEBUG:spyne.server.wsgi:Add http header 'user_agent' = ['Apache-HttpClient/4.5.5 (Java/16.0.2)']
+DEBUG:spyne.protocol.xml:Validated ? True
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x10399b730> attrcache size: 4
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x10399b730> attrcache size: 4
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x10399b730> attrcache size: 4
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x10399b730> attrcache size: 4
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x10399b730> attrcache size: 4
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x10399b730> attrcache size: 4
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x10399b730> attrcache size: 4
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x10399b730> attrcache size: 4
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x10399b730> attrcache size: 4
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x10399b730> attrcache size: 4
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x10399b730> attrcache size: 4
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x10399b730> attrcache size: 4
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x10399b160> attrcache size: 4
+DEBUG:spyne.protocol._base:PMORPH Skipped: <spyne.protocol.soap.soap11.Soap11 object at 0x10399b160> is NOT polymorphic
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x10399b160> attrcache size: 4
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x10399b160> attrcache size: 4
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x10399b160> attrcache size: 4
+DEBUG:spyne.protocol._base:PMORPH Skipped: <spyne.protocol.soap.soap11.Soap11 object at 0x10399b160> is NOT polymorphic
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x10399b160> attrcache size: 4
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x10399b160> attrcache size: 4
+DEBUG:spyne:gc.collect() took around 20ms.
+DEBUG:spyne.server.wsgi:Add http header 'accept_encoding' = ['gzip,deflate']
+DEBUG:spyne.server.wsgi:Add http header 'soapaction' = ['"add_doctor"']
+DEBUG:spyne.server.wsgi:Add http header 'host' = ['127.0.0.1:8003']
+DEBUG:spyne.server.wsgi:Add http header 'connection' = ['Keep-Alive']
+DEBUG:spyne.server.wsgi:Add http header 'user_agent' = ['Apache-HttpClient/4.5.5 (Java/16.0.2)']
+DEBUG:spyne.protocol.xml:Validated ? True
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x10399b730> attrcache size: 4
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x10399b730> attrcache size: 4
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x10399b730> attrcache size: 4
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x10399b730> attrcache size: 4
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x10399b730> attrcache size: 4
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x10399b730> attrcache size: 4
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x10399b730> attrcache size: 4
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x10399b730> attrcache size: 4
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x10399b730> attrcache size: 4
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x10399b730> attrcache size: 4
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x10399b730> attrcache size: 4
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x10399b730> attrcache size: 4
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x10399b160> attrcache size: 4
+DEBUG:spyne.protocol._base:PMORPH Skipped: <spyne.protocol.soap.soap11.Soap11 object at 0x10399b160> is NOT polymorphic
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x10399b160> attrcache size: 4
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x10399b160> attrcache size: 4
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x10399b160> attrcache size: 4
+DEBUG:spyne.protocol._base:PMORPH Skipped: <spyne.protocol.soap.soap11.Soap11 object at 0x10399b160> is NOT polymorphic
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x10399b160> attrcache size: 4
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x10399b160> attrcache size: 4
+DEBUG:spyne:gc.collect() took around 30ms.
+DEBUG:spyne.server.wsgi:Add http header 'accept_encoding' = ['gzip,deflate']
+DEBUG:spyne.server.wsgi:Add http header 'soapaction' = ['"add_doctor"']
+DEBUG:spyne.server.wsgi:Add http header 'host' = ['127.0.0.1:8003']
+DEBUG:spyne.server.wsgi:Add http header 'connection' = ['Keep-Alive']
+DEBUG:spyne.server.wsgi:Add http header 'user_agent' = ['Apache-HttpClient/4.5.5 (Java/16.0.2)']
+DEBUG:spyne.protocol.xml:Validated ? True
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x10399b730> attrcache size: 4
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x10399b730> attrcache size: 4
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x10399b730> attrcache size: 4
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x10399b730> attrcache size: 4
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x10399b730> attrcache size: 4
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x10399b730> attrcache size: 4
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x10399b730> attrcache size: 4
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x10399b730> attrcache size: 4
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x10399b730> attrcache size: 4
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x10399b730> attrcache size: 4
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x10399b730> attrcache size: 4
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x10399b730> attrcache size: 4
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x10399b160> attrcache size: 4
+DEBUG:spyne.protocol._base:PMORPH Skipped: <spyne.protocol.soap.soap11.Soap11 object at 0x10399b160> is NOT polymorphic
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x10399b160> attrcache size: 4
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x10399b160> attrcache size: 4
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x10399b160> attrcache size: 4
+DEBUG:spyne.protocol._base:PMORPH Skipped: <spyne.protocol.soap.soap11.Soap11 object at 0x10399b160> is NOT polymorphic
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x10399b160> attrcache size: 4
+DEBUG:spyne.protocol._base:<spyne.protocol.soap.soap11.Soap11 object at 0x10399b160> attrcache size: 4
+DEBUG:spyne:gc.collect() took around 20ms.
